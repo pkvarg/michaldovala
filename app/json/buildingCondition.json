@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "hasIsolation",
+    "condValue": 1.0
+  },
+  {
+    "condition": "hasNewElevator",
+    "condValue": 1.0
+  },
+  {
+    "condition": "hasNewWindows",
+    "condValue": 1.0
+  },
+  {
+    "condition": "hasNewInstallations",
+    "condValue": 1.0
+  },
+  {
+    "condition": "noIsolation",
+    "condValue": 0.85
+  },
+  {
+    "condition": "noNewElevator",
+    "condValue": 0.85
+  },
+  {
+    "condition": "noNewWindows",
+    "condValue": 0.85
+  },
+  {
+    "condition": "noNewInstallations",
+    "condValue": 0.85
+  }
+]

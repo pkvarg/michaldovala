@@ -1,0 +1,34 @@
+[
+  {
+    "smartHome": "noThermostat",
+    "smartValue": 0.8
+  },
+  {
+    "smartHome": "noInternet",
+    "smartValue": 0.8
+  },
+  {
+    "smartHome": "noAlarm",
+    "smartValue": 0.8
+  },
+  {
+    "smartHome": "noAirCon",
+    "smartValue": 0.8
+  },
+  {
+    "smartHome": "hasThermostat",
+    "smartValue": 1.08
+  },
+  {
+    "smartHome": "hasInternet",
+    "smartValue": 1.0
+  },
+  {
+    "smartHome": "hasAlarm",
+    "smartValue": 1.08
+  },
+  {
+    "smartHome": "hasAirCon",
+    "smartValue": 1.08
+  }
+]

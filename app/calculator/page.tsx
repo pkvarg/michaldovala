@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-//import { result } from '../getResults';
+import { result } from './../utils/getFlatResults';
 //import { SpinnerFullPage } from '../components';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
@@ -11,6 +11,19 @@ import Component00 from '../components/flat/Component00';
 import Component01 from '../components/flat/Component01';
 import Component02 from '../components/flat/Component02';
 import Component03 from '../components/flat/Component03';
+import Component04 from '../components/flat/Component04';
+import Component05 from '../components/flat/Component05';
+import Component06 from '../components/flat/Component06';
+import Component07 from '../components/flat/Component07';
+import Component08 from '../components/flat/Component08';
+import Component09 from '../components/flat/Component09';
+import Component10 from '../components/flat/Component10';
+import Component11 from '../components/flat/Component11';
+import Component12 from '../components/flat/Component12';
+import Component13 from '../components/flat/Component13';
+import Component14 from '../components/flat/Component14';
+import Component15 from '../components/flat/Component15';
+import Component16 from '../components/flat/Component16';
 
 const Calculator = () => {
   const router = useRouter();
@@ -485,7 +498,7 @@ const Calculator = () => {
       urbanQuality,
     };
     const calculated = result(calcValues);
-    if (calculated !== null && calculated !== '' && calculated !== 0) {
+    if (calculated) {
       setPrice(calculated.price);
       console.log('...RESULTS', calculated);
       return new Promise((resolve) => {
