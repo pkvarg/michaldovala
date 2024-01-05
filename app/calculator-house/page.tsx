@@ -48,30 +48,27 @@ const CalculatorHouse = () => {
   const [hasSauna, setHasSauna] = useState(false);
   const [hasGardenShed, setHasGardenShed] = useState(false);
 
-  const garage = document.getElementById('garage');
-  const basement = document.getElementById('basement');
-  const terrace = document.getElementById('terrace');
-  const pool = document.getElementById('pool');
-  const sauna = document.getElementById('sauna');
-  const gardenshed = document.getElementById('gardenshed');
-
   useEffect(() => {
-    if (garage !== null && hasGarage) garage.classList.add('clicked');
-    if (garage !== null && !hasGarage) garage.classList.remove('clicked');
-    if (basement !== null && hasBasement) basement.classList.add('clicked');
-    if (basement !== null && !hasBasement) basement.classList.remove('clicked');
-    if (terrace !== null && hasTerrace) terrace.classList.add('clicked');
-    if (terrace !== null && !hasTerrace) terrace.classList.remove('clicked');
-    if (pool !== null && hasPool) pool.classList.add('clicked');
-    if (pool !== null && !hasPool) pool.classList.remove('clicked');
+    const garage = document.getElementById('garage');
+    const basement = document.getElementById('basement');
+    const terrace = document.getElementById('terrace');
+    const pool = document.getElementById('pool');
+    const sauna = document.getElementById('sauna');
+    const gardenshed = document.getElementById('gardenshed');
+    if (garage && hasGarage) garage.classList.add('clicked');
+    if (garage && !hasGarage) garage.classList.remove('clicked');
+    if (basement && hasBasement) basement.classList.add('clicked');
+    if (basement && !hasBasement) basement.classList.remove('clicked');
+    if (terrace && hasTerrace) terrace.classList.add('clicked');
+    if (terrace && !hasTerrace) terrace.classList.remove('clicked');
+    if (pool && hasPool) pool.classList.add('clicked');
+    if (pool && !hasPool) pool.classList.remove('clicked');
 
-    if (sauna !== null && hasSauna) sauna.classList.add('clicked');
-    if (sauna !== null && !hasSauna) sauna.classList.remove('clicked');
+    if (sauna && hasSauna) sauna.classList.add('clicked');
+    if (sauna && !hasSauna) sauna.classList.remove('clicked');
 
-    if (gardenshed !== null && hasGardenShed)
-      gardenshed.classList.add('clicked');
-    if (gardenshed !== null && !hasGardenShed)
-      gardenshed.classList.remove('clicked');
+    if (gardenshed && hasGardenShed) gardenshed.classList.add('clicked');
+    if (gardenshed && !hasGardenShed) gardenshed.classList.remove('clicked');
   }, [hasGarage, hasBasement, hasTerrace, hasPool, hasSauna, hasGardenShed]);
 
   const [landType, setLandType] = useState(0);
@@ -84,33 +81,30 @@ const CalculatorHouse = () => {
   const [hasSolarCollectors, setHasSolarCollectors] = useState(false);
   const [hasCameraSystem, setHasCameraSystem] = useState(false);
   const [hasInternet, setHasInternet] = useState(false);
-  const thermostat = document.getElementById('thermostat');
-  const alarm = document.getElementById('alarm');
-  const firealarm = document.getElementById('firealarm');
-  const solarcollectors = document.getElementById('solarcollectors');
-  const camerasystem = document.getElementById('camerasystem');
-  const internet = document.getElementById('internet');
 
   useEffect(() => {
-    if (thermostat !== null && hasThermostat)
-      thermostat.classList.add('clicked');
-    if (thermostat !== null && !hasThermostat)
-      thermostat.classList.remove('clicked');
-    if (alarm !== null && hasAlarm) alarm.classList.add('clicked');
-    if (alarm !== null && !hasAlarm) alarm.classList.remove('clicked');
-    if (firealarm !== null && hasFireAlarm) firealarm.classList.add('clicked');
-    if (firealarm !== null && !hasFireAlarm)
-      firealarm.classList.remove('clicked');
-    if (solarcollectors !== null && hasSolarCollectors)
+    const thermostat = document.getElementById('thermostat');
+    const alarm = document.getElementById('alarm');
+    const firealarm = document.getElementById('firealarm');
+    const solarcollectors = document.getElementById('solarcollectors');
+    const camerasystem = document.getElementById('camerasystem');
+    const internet = document.getElementById('internet');
+
+    if (thermostat && hasThermostat) thermostat.classList.add('clicked');
+    if (thermostat && !hasThermostat) thermostat.classList.remove('clicked');
+    if (alarm && hasAlarm) alarm.classList.add('clicked');
+    if (alarm && !hasAlarm) alarm.classList.remove('clicked');
+    if (firealarm && hasFireAlarm) firealarm.classList.add('clicked');
+    if (firealarm && !hasFireAlarm) firealarm.classList.remove('clicked');
+    if (solarcollectors && hasSolarCollectors)
       solarcollectors.classList.add('clicked');
-    if (solarcollectors !== null && !hasSolarCollectors)
+    if (solarcollectors && !hasSolarCollectors)
       solarcollectors.classList.remove('clicked');
-    if (camerasystem !== null && hasCameraSystem)
-      camerasystem.classList.add('clicked');
-    if (camerasystem !== null && !hasCameraSystem)
+    if (camerasystem && hasCameraSystem) camerasystem.classList.add('clicked');
+    if (camerasystem && !hasCameraSystem)
       camerasystem.classList.remove('clicked');
-    if (internet !== null && hasInternet) internet.classList.add('clicked');
-    if (internet !== null && !hasInternet) internet.classList.remove('clicked');
+    if (internet && hasInternet) internet.classList.add('clicked');
+    if (internet && !hasInternet) internet.classList.remove('clicked');
   }, [
     hasThermostat,
     hasAlarm,
@@ -129,31 +123,26 @@ const CalculatorHouse = () => {
   const [hasElectricity, setHasElectricity] = useState(false);
   const [hasGas, setHasGas] = useState(false);
 
-  const well = document.getElementById('well');
-  const citywater = document.getElementById('citywater');
-  const citysewerage = document.getElementById('citysewerage');
-  const septic = document.getElementById('septic');
-  const electricity = document.getElementById('electricity');
-  const gas = document.getElementById('gas');
-
   useEffect(() => {
-    if (well !== null && hasWell) well.classList.add('clicked');
-    if (well !== null && !hasWell) well.classList.remove('clicked');
-    if (citywater !== null && hasCityWater) citywater.classList.add('clicked');
-    if (citywater !== null && !hasCityWater)
-      citywater.classList.remove('clicked');
-    if (citysewerage !== null && hasCitySewerage)
-      citysewerage.classList.add('clicked');
-    if (citysewerage !== null && !hasCitySewerage)
+    const well = document.getElementById('well');
+    const citywater = document.getElementById('citywater');
+    const citysewerage = document.getElementById('citysewerage');
+    const septic = document.getElementById('septic');
+    const electricity = document.getElementById('electricity');
+    const gas = document.getElementById('gas');
+    if (well && hasWell) well.classList.add('clicked');
+    if (well && !hasWell) well.classList.remove('clicked');
+    if (citywater && hasCityWater) citywater.classList.add('clicked');
+    if (citywater && !hasCityWater) citywater.classList.remove('clicked');
+    if (citysewerage && hasCitySewerage) citysewerage.classList.add('clicked');
+    if (citysewerage && !hasCitySewerage)
       citysewerage.classList.remove('clicked');
-    if (septic !== null && hasSeptic) septic.classList.add('clicked');
-    if (septic !== null && !hasSeptic) septic.classList.remove('clicked');
-    if (electricity !== null && hasElectricity)
-      electricity.classList.add('clicked');
-    if (electricity !== null && !hasElectricity)
-      electricity.classList.remove('clicked');
-    if (gas !== null && hasGas) gas.classList.add('clicked');
-    if (gas !== null && !hasGas) gas.classList.remove('clicked');
+    if (septic && hasSeptic) septic.classList.add('clicked');
+    if (septic && !hasSeptic) septic.classList.remove('clicked');
+    if (electricity && hasElectricity) electricity.classList.add('clicked');
+    if (electricity && !hasElectricity) electricity.classList.remove('clicked');
+    if (gas && hasGas) gas.classList.add('clicked');
+    if (gas && !hasGas) gas.classList.remove('clicked');
   }, [
     hasWell,
     hasCityWater,
@@ -189,32 +178,29 @@ const CalculatorHouse = () => {
   const [hasUnderfloorHeating, setHasUnderfloorHeating] = useState(false);
   const [hasOther, setHasOther] = useState(false);
 
-  const electricradiators = document.getElementById('electricradiators');
-  const heatpump = document.getElementById('heatpump');
-  const solidfuel = document.getElementById('solidfuel');
-  const gasboiler = document.getElementById('gasboiler');
-  const underfloorheating = document.getElementById('underfloorheating');
-  const other = document.getElementById('other');
-
   useEffect(() => {
-    if (electricradiators !== null && hasElectricRadiators)
+    const electricradiators = document.getElementById('electricradiators');
+    const heatpump = document.getElementById('heatpump');
+    const solidfuel = document.getElementById('solidfuel');
+    const gasboiler = document.getElementById('gasboiler');
+    const underfloorheating = document.getElementById('underfloorheating');
+    const other = document.getElementById('other');
+    if (electricradiators && hasElectricRadiators)
       electricradiators.classList.add('clicked');
-    if (electricradiators !== null && !hasElectricRadiators)
+    if (electricradiators && !hasElectricRadiators)
       electricradiators.classList.remove('clicked');
-    if (heatpump !== null && hasHeatPump) heatpump.classList.add('clicked');
-    if (heatpump !== null && !hasHeatPump) heatpump.classList.remove('clicked');
-    if (solidfuel !== null && hasSolidFuel) solidfuel.classList.add('clicked');
-    if (solidfuel !== null && !hasSolidFuel)
-      solidfuel.classList.remove('clicked');
-    if (gasboiler !== null && hasGasBoiler) gasboiler.classList.add('clicked');
-    if (gasboiler !== null && !hasGasBoiler)
-      gasboiler.classList.remove('clicked');
-    if (underfloorheating !== null && hasUnderfloorHeating)
+    if (heatpump && hasHeatPump) heatpump.classList.add('clicked');
+    if (heatpump && !hasHeatPump) heatpump.classList.remove('clicked');
+    if (solidfuel && hasSolidFuel) solidfuel.classList.add('clicked');
+    if (solidfuel && !hasSolidFuel) solidfuel.classList.remove('clicked');
+    if (gasboiler && hasGasBoiler) gasboiler.classList.add('clicked');
+    if (gasboiler && !hasGasBoiler) gasboiler.classList.remove('clicked');
+    if (underfloorheating && hasUnderfloorHeating)
       underfloorheating.classList.add('clicked');
-    if (underfloorheating !== null && !hasUnderfloorHeating)
+    if (underfloorheating && !hasUnderfloorHeating)
       underfloorheating.classList.remove('clicked');
-    if (other !== null && hasOther) other.classList.add('clicked');
-    if (other !== null && !hasOther) other.classList.remove('clicked');
+    if (other && hasOther) other.classList.add('clicked');
+    if (other && !hasOther) other.classList.remove('clicked');
   }, [
     hasElectricRadiators,
     hasHeatPump,
