@@ -8,23 +8,9 @@ import { toast } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Component00 from '../components/flat/Component00';
-
-// const Component01 = lazy(() => import('../components/calculator/Component01'));
-// const Component02 = lazy(() => import('../components/calculator/Component02'));
-// const Component03 = lazy(() => import('../components/calculator/Component03'));
-// const Component04 = lazy(() => import('../components/calculator/Component04'));
-// const Component05 = lazy(() => import('../components/calculator/Component05'));
-// const Component06 = lazy(() => import('../components/calculator/Component06'));
-// const Component07 = lazy(() => import('../components/calculator/Component07'));
-// const Component08 = lazy(() => import('../components/calculator/Component08'));
-// const Component09 = lazy(() => import('../components/calculator/Component09'));
-// const Component10 = lazy(() => import('../components/calculator/Component10'));
-// const Component11 = lazy(() => import('../components/calculator/Component11'));
-// const Component12 = lazy(() => import('../components/calculator/Component12'));
-// const Component13 = lazy(() => import('../components/calculator/Component13'));
-// const Component14 = lazy(() => import('../components/calculator/Component14'));
-// const Component15 = lazy(() => import('../components/calculator/Component15'));
-// const Component16 = lazy(() => import('../components/calculator/Component16'));
+import Component01 from '../components/flat/Component01';
+import Component02 from '../components/flat/Component02';
+import Component03 from '../components/flat/Component03';
 
 const Calculator = () => {
   const router = useRouter();
