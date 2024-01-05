@@ -73,11 +73,12 @@ const Calculator = () => {
     currentFloorNumber,
     hasElevator,
     hasBalcony,
-    hasGarage,
-    hasParking,
     hasLoggia,
     hasTerrace,
     hasBasement,
+    hasGarage,
+    hasParking,
+    hasNoParking,
     builtYear,
     hasIsolation,
     hasNewElevator,
@@ -318,7 +319,7 @@ const Calculator = () => {
   };
 
   const handleHouseCondition = (num: number) => {
-    if (currentConditionClicked !== null) {
+    if (currentConditionClicked !== '') {
       const toRemoveFrom: any = document.getElementById(
         currentConditionClicked,
       );
@@ -331,7 +332,7 @@ const Calculator = () => {
   };
 
   const handleHasElevator = (elevator: string) => {
-    if (currentElevatorStatusClicked !== null) {
+    if (currentElevatorStatusClicked !== '') {
       const toRemoveFrom: any = document.getElementById(
         currentElevatorStatusClicked,
       );
@@ -346,7 +347,7 @@ const Calculator = () => {
   };
 
   const handleUrbanQuality = (quality: string) => {
-    if (currentUrbanQualityClicked !== null) {
+    if (currentUrbanQualityClicked !== '') {
       const toRemoveFrom: any = document.getElementById(
         currentUrbanQualityClicked,
       );
@@ -392,81 +393,69 @@ const Calculator = () => {
     }
   }, [email]);
 
-  const balcony = document.getElementById('balcony');
-  const loggia = document.getElementById('loggia');
-  const terrace = document.getElementById('terrace');
-  const basement = document.getElementById('basement');
-
   useEffect(() => {
-    if (balcony !== null && hasBalcony) balcony.classList.add('clicked');
-    if (balcony !== null && !hasBalcony) balcony.classList.remove('clicked');
-    if (loggia !== null && hasLoggia) loggia.classList.add('clicked');
-    if (loggia !== null && !hasLoggia) loggia.classList.remove('clicked');
-    if (terrace !== null && hasTerrace) terrace.classList.add('clicked');
-    if (terrace !== null && !hasTerrace) terrace.classList.remove('clicked');
-    if (basement !== null && hasBasement) basement.classList.add('clicked');
-    if (basement !== null && !hasBasement) basement.classList.remove('clicked');
+    const balcony = document.getElementById('balcony');
+    const loggia = document.getElementById('loggia');
+    const terrace = document.getElementById('terrace');
+    const basement = document.getElementById('basement');
+    if (balcony && hasBalcony) balcony.classList.add('clicked');
+    if (balcony && !hasBalcony) balcony.classList.remove('clicked');
+    if (loggia && hasLoggia) loggia.classList.add('clicked');
+    if (loggia && !hasLoggia) loggia.classList.remove('clicked');
+    if (terrace && hasTerrace) terrace.classList.add('clicked');
+    if (terrace && !hasTerrace) terrace.classList.remove('clicked');
+    if (basement && hasBasement) basement.classList.add('clicked');
+    if (basement && !hasBasement) basement.classList.remove('clicked');
   }, [hasBalcony, hasLoggia, hasTerrace, hasBasement]);
 
-  const garage = document.getElementById('garage');
-  const parking = document.getElementById('parking');
-  const noParking = document.getElementById('noParking');
-
   useEffect(() => {
-    if (garage !== null && hasGarage) garage.classList.add('clicked');
-    if (garage !== null && !hasGarage) garage.classList.remove('clicked');
-    if (parking !== null && hasParking) parking.classList.add('clicked');
-    if (parking !== null && !hasParking) parking.classList.remove('clicked');
-    if (noParking !== null && hasNoParking) {
+    const garage = document.getElementById('garage');
+    const parking = document.getElementById('parking');
+    const noParking = document.getElementById('noParking');
+    if (garage && hasGarage) garage.classList.add('clicked');
+    if (garage && !hasGarage) garage.classList.remove('clicked');
+    if (parking && hasParking) parking.classList.add('clicked');
+    if (parking && !hasParking) parking.classList.remove('clicked');
+    if (noParking && hasNoParking) {
       setHasParking(false);
       setHasGarage(false);
       garage?.classList.remove('clicked');
       parking?.classList.remove('clicked');
       noParking.classList.add('clicked');
     }
-    if (noParking !== null && !hasNoParking)
-      noParking.classList.remove('clicked');
+    if (noParking && !hasNoParking) noParking.classList.remove('clicked');
   }, [hasGarage, hasParking, hasNoParking]);
 
-  const isolation = document.getElementById('isolation');
-  const newElevator = document.getElementById('newElevator');
-  const newWindows = document.getElementById('newWindows');
-  const newInstallations = document.getElementById('newInstallations');
-
   useEffect(() => {
-    if (isolation !== null && hasIsolation) isolation.classList.add('clicked');
-    if (isolation !== null && !hasIsolation)
-      isolation.classList.remove('clicked');
-    if (newElevator !== null && hasNewElevator)
-      newElevator.classList.add('clicked');
-    if (newElevator !== null && !hasNewElevator)
-      newElevator.classList.remove('clicked');
-    if (newWindows !== null && hasNewWindows)
-      newWindows.classList.add('clicked');
-    if (newWindows !== null && !hasNewWindows)
-      newWindows.classList.remove('clicked');
-    if (newInstallations !== null && hasNewInstallations)
+    const isolation = document.getElementById('isolation');
+    const newElevator = document.getElementById('newElevator');
+    const newWindows = document.getElementById('newWindows');
+    const newInstallations = document.getElementById('newInstallations');
+    if (isolation && hasIsolation) isolation.classList.add('clicked');
+    if (isolation && !hasIsolation) isolation.classList.remove('clicked');
+    if (newElevator && hasNewElevator) newElevator.classList.add('clicked');
+    if (newElevator && !hasNewElevator) newElevator.classList.remove('clicked');
+    if (newWindows && hasNewWindows) newWindows.classList.add('clicked');
+    if (newWindows && !hasNewWindows) newWindows.classList.remove('clicked');
+    if (newInstallations && hasNewInstallations)
       newInstallations.classList.add('clicked');
-    if (newInstallations !== null && !hasNewInstallations)
+    if (newInstallations && !hasNewInstallations)
       newInstallations.classList.remove('clicked');
   }, [hasIsolation, hasNewElevator, hasNewWindows, hasNewInstallations]);
 
-  const thermostat = document.getElementById('thermostat');
-  const internet = document.getElementById('internet');
-  const alarm = document.getElementById('alarm');
-  const aircon = document.getElementById('aircon');
-
   useEffect(() => {
-    if (thermostat !== null && hasThermostat)
-      thermostat.classList.add('clicked');
-    if (thermostat !== null && !hasThermostat)
-      thermostat.classList.remove('clicked');
-    if (internet !== null && hasInternet) internet.classList.add('clicked');
-    if (internet !== null && !hasInternet) internet.classList.remove('clicked');
-    if (alarm !== null && hasAlarm) alarm.classList.add('clicked');
-    if (alarm !== null && !hasAlarm) alarm.classList.remove('clicked');
-    if (aircon !== null && hasAirCon) aircon.classList.add('clicked');
-    if (aircon !== null && !hasAirCon) aircon.classList.remove('clicked');
+    const thermostat = document.getElementById('thermostat');
+    const internet = document.getElementById('internet');
+    const alarm = document.getElementById('alarm');
+    const aircon = document.getElementById('aircon');
+    if (thermostat && hasThermostat) thermostat.classList.add('clicked');
+    if (thermostat && !hasThermostat) thermostat.classList.remove('clicked');
+    if (internet && hasInternet) internet.classList.add('clicked');
+    if (internet && !hasInternet) internet.classList.remove('clicked');
+    if (alarm && hasAlarm) alarm.classList.add('clicked');
+    if (alarm && !hasAlarm) alarm.classList.remove('clicked');
+    if (aircon && hasAirCon) aircon.classList.add('clicked');
+    if (aircon && !hasAirCon) aircon.classList.remove('clicked');
   }, [hasThermostat, hasInternet, hasAlarm, hasAirCon]);
 
   const startCalculation = async () => {
@@ -541,16 +530,16 @@ const Calculator = () => {
       email,
       price: resprice,
     };
-    console.log('..sending..');
-    const { data } = await axios.put(
-      `https://api.pictusweb.com/api/md/email`,
-      //`http://localhost:2000/api/md/email`,
-      {
-        calcValues,
-      },
-    );
+    console.log('..sending..', calcValues);
+    // const { data } = await axios.put(
+    //   `https://api.pictusweb.com/api/md/email`,
+    //   //`http://localhost:2000/api/md/email`,
+    //   {
+    //     calcValues,
+    //   },
+    // );
 
-    console.log('ctc:', data);
+    // console.log('ctc:', data);
   };
 
   const handleSubmitForm = async (e: any) => {

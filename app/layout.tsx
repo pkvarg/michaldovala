@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-
 import localFont from 'next/font/local';
+import { Toaster } from 'react-hot-toast';
 
 // Font files can be colocated inside of `pages`
 const myFont = localFont({ src: './fonts/trebuc.ttf' });
@@ -19,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={myFont.className}>{children}</body>
+      <body className={myFont.className}>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }
