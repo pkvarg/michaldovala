@@ -100,9 +100,6 @@ const Calculator = () => {
   const [currentElevatorStatusClicked, setCurrentElevatorStatusClicked] =
     useState('');
 
-  const [currentSmartHomeItemsClicked, setCurrentSmartHomeItemsClicked] =
-    useState(null);
-
   const [currentUrbanQualityClicked, setCurrentUrbanQualityClicked] =
     useState('');
 
@@ -126,7 +123,7 @@ const Calculator = () => {
     }
   };
 
-  const renderComponent = (componentNumber: Number) => {
+  const renderComponent = (componentNumber: number) => {
     switch (componentNumber) {
       case 0:
         return <Component00 handleFlatOrHouse={handleFlatOrHouse} />;
