@@ -6,6 +6,14 @@ import floorNumberAndValue from './../json/floorNumberAndValue.json';
 import buildingCondition from './../json/buildingCondition.json';
 import smartHome from './../json/smartHome.json';
 
+// const streetAndDistrict = require('./../json/streetAndDistrict.json');
+// const districtAndPrice = require('./../json/districtAndPrice.json');
+// const roomsAndPrice = require('./../json/roomsAndPrice.json');
+// const floorCountAndValue = require('./../json/floorCountAndValue.json');
+// const floorNumberAndValue = require('./../json/floorNumberAndValue.json');
+// const buildingCondition = require('./../json/buildingCondition.json');
+// const smartHome = require('./../json/smartHome.json');
+
 type CalcValues = {
   city: string;
   street: string;
@@ -47,12 +55,14 @@ export const result = (calcValues: CalcValues) => {
 
   const getDistrictPrice = (street: string) => {
     // kedy district = spolu?
-    const resdis = streetAndDistrict.find((strt) => strt.street === street);
+    const resdis = streetAndDistrict.find(
+      (strt: any) => strt.street === street,
+    );
     let district: string | undefined = resdis?.district;
     console.log('district', district);
 
     const resdisprice = districtAndPrice.find(
-      (dsrct) => dsrct.district === district,
+      (dsrct: any) => dsrct.district === district,
     );
 
     let disPrice: number | undefined = resdisprice?.districtPrice;
@@ -67,7 +77,7 @@ export const result = (calcValues: CalcValues) => {
 
   const getRoomPrice = (countRooms: number) => {
     const resroomsprice = roomsAndPrice.find(
-      (rooms) => parseInt(rooms.rooms) == countRooms,
+      (rooms: any) => parseInt(rooms.rooms) == countRooms,
     );
     const roomsPrice: number | undefined = resroomsprice?.roomsPrice;
 
@@ -124,7 +134,7 @@ export const result = (calcValues: CalcValues) => {
     };
     const floorsCounted = assignFloors(allFloorsCount);
     const resfloorcountvalue = floorCountAndValue.find(
-      (flrCnt) => flrCnt.floorCount == floorsCounted,
+      (flrCnt: any) => flrCnt.floorCount == floorsCounted,
     );
     const floorCountValue = resfloorcountvalue?.floorCountValue;
     let newAverage = (averageOfDistrictPlusRoom + result[3] + result[4]) / 3;
@@ -148,12 +158,12 @@ export const result = (calcValues: CalcValues) => {
     };
     const currentFloorAssigned = assignCurrentFloor(currentFloorNumber);
     const flV = floorNumberAndValue.find(
-      (flr) => flr.floorNumber == currentFloorAssigned,
+      (flr: any) => flr.floorNumber == currentFloorAssigned,
     );
 
     console.log('flvl', flV);
     const resfloornumbervalue = floorNumberAndValue.find(
-      (flr) => flr.floorNumber == currentFloorAssigned,
+      (flr: any) => flr.floorNumber == currentFloorAssigned,
     );
     const floorNumberValue = resfloornumbervalue?.floorNumberValue;
 
@@ -249,61 +259,6 @@ export const result = (calcValues: CalcValues) => {
 
   getBuiltYearPrice(calcValues.builtYear);
 
-  // const getBuildingConditionPrice = (
-  //   hasIsolation: boolean,
-  //   hasNewElevator: boolean,
-  //   hasNewWindows: boolean,
-  //   hasNewInstallations: boolean,
-  // ) => {
-  //   let isolation: string;
-  //   let elevator: string;
-  //   let windows: string;
-  //   let installations: string;
-  //   if (hasIsolation) isolation = 'hasIsolation';
-  //   if (!hasIsolation) isolation = 'noIsolation';
-  //   if (hasNewElevator) elevator = 'hasNewElevator';
-  //   if (!hasNewElevator) elevator = 'noNewElevator';
-  //   if (hasNewWindows) windows = 'hasNewWindows';
-  //   if (!hasNewWindows) windows = 'noNewWindows';
-  //   if (hasNewInstallations) installations = 'hasNewInstallations';
-  //   if (!hasNewInstallations) installations = 'noNewInstallations';
-
-  //   const getCondition = (aspect: string) =>
-  //     buildingCondition.find((cnd) => cnd.condition == aspect);
-
-  //   const isolationResult = Math.ceil(
-  //     getCondition(isolation).condValue * holdValue,
-  //   );
-  //   const elevatorResult = Math.ceil(
-  //     getCondition(elevator).condValue * holdValue,
-  //   );
-  //   const windowsResult = Math.ceil(
-  //     getCondition(windows).condValue * holdValue,
-  //   );
-  //   const installationsResult = Math.ceil(
-  //     getCondition(installations).condValue * holdValue,
-  //   );
-  //   console.log(
-  //     'buildingCondResults',
-  //     isolationResult,
-  //     elevatorResult,
-  //     windowsResult,
-  //     installationsResult,
-  //   );
-  //   result.push(isolationResult);
-  //   result.push(elevatorResult);
-  //   result.push(windowsResult);
-  //   result.push(installationsResult);
-  //   console.log('resArray', result);
-  // };
-
-  // getBuildingConditionPrice(
-  //   calcValues.hasIsolation,
-  //   calcValues.hasNewElevator,
-  //   calcValues.hasNewWindows,
-  //   calcValues.hasNewInstallations,
-  // );
-
   const getBuildingConditionPrice = (
     hasIsolation: boolean,
     hasNewElevator: boolean,
@@ -318,37 +273,39 @@ export const result = (calcValues: CalcValues) => {
       : 'noNewInstallations';
 
     const getCondition = (aspect: string) =>
-      buildingCondition.find((cnd) => cnd.condition === aspect);
+      buildingCondition.find((cnd: any) => cnd.condition === aspect);
 
-    const isolationResult = Math.ceil(
-      getCondition(isolation)?.condValue ?? 0 * holdValue,
-    );
-    const elevatorResult = Math.ceil(
-      getCondition(elevator)?.condValue ?? 0 * holdValue,
-    );
-    const windowsResult = Math.ceil(
-      getCondition(windows)?.condValue ?? 0 * holdValue,
-    );
-    const installationsResult = Math.ceil(
-      getCondition(installations)?.condValue ?? 0 * holdValue,
-    );
+    const isocondition = getCondition(isolation)?.condValue;
 
-    // const result: number[] = [
-    //   isolationResult,
-    //   elevatorResult,
-    //   windowsResult,
-    //   installationsResult,
-    // ];
+    if (isocondition) {
+      const isolationResult = Math.ceil(isocondition * holdValue);
+      result.push(isolationResult);
+    }
 
-    result.push(isolationResult);
-    result.push(elevatorResult);
-    result.push(windowsResult);
-    result.push(installationsResult);
+    const elecondition = getCondition(elevator)?.condValue;
+
+    if (elecondition) {
+      const elevatorResult = Math.ceil(elecondition * holdValue);
+      result.push(elevatorResult);
+    }
+
+    const wincondition = getCondition(windows)?.condValue;
+
+    if (wincondition) {
+      const windowsResult = Math.ceil(wincondition * holdValue);
+      result.push(windowsResult);
+    }
+
+    const instcondition = getCondition(installations)?.condValue;
+
+    if (instcondition) {
+      const installationsResult = Math.ceil(instcondition * holdValue);
+
+      result.push(installationsResult);
+    }
 
     console.log('buildingCondResults', ...result);
     console.log('resArray', result);
-
-    //return result;
   };
 
   const conditionPriceResults = getBuildingConditionPrice(
@@ -357,58 +314,6 @@ export const result = (calcValues: CalcValues) => {
     calcValues.hasNewWindows,
     calcValues.hasNewInstallations,
   );
-
-  // const getSmartHomePrice = (
-  //   hasThermostat: boolean,
-  //   hasInternet: boolean,
-  //   hasAlarm: boolean,
-  //   hasAirCon: boolean,
-  // ) => {
-  //   let thermostat;
-  //   let internet;
-  //   let alarm;
-  //   let aircon;
-  //   if (hasThermostat) thermostat = 'hasThermostat';
-  //   if (!hasThermostat) thermostat = 'noThermostat';
-  //   if (hasInternet) internet = 'hasInternet';
-  //   if (!hasInternet) internet = 'noInternet';
-  //   if (hasAlarm) alarm = 'hasAlarm';
-  //   if (!hasAlarm) alarm = 'noAlarm';
-  //   if (hasAirCon) aircon = 'hasAirCon';
-  //   if (!hasAirCon) aircon = 'noAirCon';
-
-  //   const getCondition = (aspect) =>
-  //     smartHome.find((cnd) => cnd.smartHome == aspect);
-
-  //   const thermostatResult = Math.ceil(
-  //     getCondition(thermostat).smartValue * holdValue,
-  //   );
-  //   const internetResult = Math.ceil(
-  //     getCondition(internet).smartValue * holdValue,
-  //   );
-  //   const alarmResult = Math.ceil(getCondition(alarm).smartValue * holdValue);
-  //   const airconResult = Math.ceil(getCondition(aircon).smartValue * holdValue);
-
-  //   console.log(
-  //     'smartResults',
-  //     thermostatResult,
-  //     internetResult,
-  //     alarmResult,
-  //     airconResult,
-  //   );
-  //   result.push(thermostatResult);
-  //   result.push(internetResult);
-  //   result.push(alarmResult);
-  //   result.push(airconResult);
-  //   console.log('resArray', result);
-  // };
-
-  // getSmartHomePrice(
-  //   calcValues.hasThermostat,
-  //   calcValues.hasInternet,
-  //   calcValues.hasAlarm,
-  //   calcValues.hasAirCon,
-  // );
 
   const getSmartHomePrice = (
     hasThermostat: boolean,
@@ -422,37 +327,34 @@ export const result = (calcValues: CalcValues) => {
     const aircon = hasAirCon ? 'hasAirCon' : 'noAirCon';
 
     const getCondition = (aspect: string) =>
-      smartHome.find((cnd) => cnd.smartHome === aspect);
+      smartHome.find((cnd: any) => cnd.smartHome === aspect);
 
-    const thermostatResult = Math.ceil(
-      getCondition(thermostat)?.smartValue ?? 0 * holdValue,
-    );
-    const internetResult = Math.ceil(
-      getCondition(internet)?.smartValue ?? 0 * holdValue,
-    );
-    const alarmResult = Math.ceil(
-      getCondition(alarm)?.smartValue ?? 0 * holdValue,
-    );
-    const airconResult = Math.ceil(
-      getCondition(aircon)?.smartValue ?? 0 * holdValue,
-    );
+    const thermresult = getCondition(thermostat)?.smartValue;
 
-    // const result: number[] = [
-    //   thermostatResult,
-    //   internetResult,
-    //   alarmResult,
-    //   airconResult,
-    // ];
+    if (thermresult) {
+      const thermostatResult = Math.ceil(thermresult * holdValue);
+      result.push(thermostatResult);
+    }
 
-    result.push(thermostatResult);
-    result.push(internetResult);
-    result.push(alarmResult);
-    result.push(airconResult);
+    const intresult = getCondition(internet)?.smartValue;
+    if (intresult) {
+      const internetResult = Math.ceil(intresult * holdValue);
+      result.push(internetResult);
+    }
+
+    const alresult = getCondition(alarm)?.smartValue;
+    if (alresult) {
+      const alarmResult = Math.ceil(alresult * holdValue);
+      result.push(alarmResult);
+    }
+    const airresult = getCondition(aircon)?.smartValue;
+    if (airresult) {
+      const airconResult = Math.ceil(airresult * holdValue);
+      result.push(airconResult);
+    }
 
     console.log('smartResults', ...result);
     console.log('resArray', result);
-
-    //return result;
   };
 
   const smartHomePriceResults = getSmartHomePrice(
@@ -498,3 +400,37 @@ export const result = (calcValues: CalcValues) => {
     price,
   };
 };
+
+// TEST VALUES
+const testValues = {
+  city: 'Bratislava',
+  street: 'Muškátová ulica',
+  countRooms: 1,
+  houseCondition: 4,
+  squareMeters: 36,
+  allFloorsCount: 5,
+  currentFloorNumber: 2,
+  hasElevator: 'hasElevator',
+  hasBalcony: false,
+  hasLoggia: false,
+  hasTerrace: false,
+  hasBasement: false,
+  hasGarage: false,
+  hasParking: false,
+  builtYear: 1988,
+  hasIsolation: true,
+  hasNewElevator: true,
+  hasNewWindows: true,
+  hasNewInstallations: true,
+  hasThermostat: false,
+  hasInternet: true,
+  hasAlarm: false,
+  hasAirCon: false,
+  urbanQuality: 'excellent',
+
+  houseNumber: '1',
+  monthlyCosts: '200',
+  price: 88000,
+};
+
+//result(testValues);

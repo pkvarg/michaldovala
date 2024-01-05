@@ -531,15 +531,15 @@ const Calculator = () => {
       price: resprice,
     };
     console.log('..sending..', calcValues);
-    // const { data } = await axios.put(
-    //   `https://api.pictusweb.com/api/md/email`,
-    //   //`http://localhost:2000/api/md/email`,
-    //   {
-    //     calcValues,
-    //   },
-    // );
+    const { data } = await axios.put(
+      //`https://api.pictusweb.com/api/md/email`,
+      `http://localhost:2000/api/md/email`,
+      {
+        calcValues,
+      },
+    );
 
-    // console.log('ctc:', data);
+    console.log('ctc:', data);
   };
 
   const handleSubmitForm = async (e: any) => {
