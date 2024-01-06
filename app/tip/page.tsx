@@ -44,8 +44,8 @@ const Tip = () => {
     try {
       console.log('..tip email is sending..');
       const { data } = await axios.put(
-        // `https://api.pictusweb.com/api/md/tip`,
-        `http://localhost:2000/api/md/tip`,
+        `https://api.pictusweb.com/api/md/tip`,
+        //`http://localhost:2000/api/md/tip`,
         {
           values,
         },

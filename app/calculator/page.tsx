@@ -529,8 +529,8 @@ const Calculator = () => {
     };
     console.log('..sending..', calcValues);
     const { data } = await axios.put(
-      //`https://api.pictusweb.com/api/md/email`,
-      `http://localhost:2000/api/md/email`,
+      `https://api.pictusweb.com/api/md/email`,
+      //`http://localhost:2000/api/md/email`,
       {
         calcValues,
       },

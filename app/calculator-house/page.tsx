@@ -642,8 +642,8 @@ const CalculatorHouse = () => {
     };
     console.log('..sendingHouseEmail..', calcValues);
     const { data } = await axios.put(
-      //`https://api.pictusweb.com/api/md/email-house`,
-      `http://localhost:2000/api/md/email-house`,
+      `https://api.pictusweb.com/api/md/email-house`,
+      //`http://localhost:2000/api/md/email-house`,
       {
         calcValues,
       },
