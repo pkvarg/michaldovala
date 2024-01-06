@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Michal Dovala',
     images: [
       {
-        url: '/michaldovala.png',
+        url: 'https://michaldovala.sk/michaldovala.png',
         width: 1260,
         height: 800,
       },
@@ -31,6 +31,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* <head>
+        <meta property="fb:app_id" content="627076731624225" />
+        <meta
+          property="og:image"
+          content="https://michaldovala.sk/michaldovala.png"
+        />
+      </head> */}
       <body className={myFont.className}>
         <Toaster />
         {children}
