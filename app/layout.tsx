@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     description: 'Domov, o ktorom snívate na dosah ruky',
     url: 'https://michaldovala.sk',
     siteName: 'Michal Dovala',
-    images: [
-      {
-        url: 'https://michaldovala.sk/michaldovala.png',
-        width: 1260,
-        height: 800,
-      },
-    ],
+    // images: [
+    //   {
+    //     url: 'https://michaldovala.sk/michaldovala.png',
+    //     width: 1260,
+    //     height: 800,
+    //   },
+    // ],
   },
 };
 
@@ -31,13 +31,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <head>
+      <head>
         <meta property="fb:app_id" content="627076731624225" />
         <meta
           property="og:image"
           content="https://michaldovala.sk/michaldovala.png"
         />
-      </head> */}
+      </head>
       <body className={myFont.className}>
         <Toaster />
         {children}
