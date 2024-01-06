@@ -9,6 +9,19 @@ const myFont = localFont({ src: './fonts/trebuc.ttf' });
 export const metadata: Metadata = {
   title: 'Michal Dovala',
   description: 'Domov, o ktorom snívate na dosah ruky',
+  openGraph: {
+    title: 'Michal Dovala',
+    description: 'Domov, o ktorom snívate na dosah ruky',
+    url: 'https://michaldovala.sk',
+    siteName: 'Michal Dovala',
+    images: [
+      {
+        url: '/app/opengraph-image.png',
+        width: 1260,
+        height: 800,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
