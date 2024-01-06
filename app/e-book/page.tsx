@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { toast } from 'react-hot-toast';
+import Image from 'next/image';
 
 const Ebook = () => {
   const [showPage, setShowPage] = useState(true);
@@ -111,7 +112,13 @@ const Ebook = () => {
             </button>
           </div>
           <div className="flex flex-col shadow-2xl lg:w-[40%]">
-            <img className="shadow-2xl" src="ebook.webp" alt="ebook_cover" />
+            <Image
+              className="w-[100%] shadow-2xl"
+              src="/ebook.webp"
+              alt="ebook_cover"
+              width={60}
+              height={60}
+            />
           </div>
         </div>
 

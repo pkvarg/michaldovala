@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { toast } from 'react-hot-toast';
 
@@ -64,10 +65,12 @@ const Component07: React.FC<Component07Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[20%] w-[60%]"
               src="/garage1.webp"
               alt="garage"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -81,10 +84,12 @@ const Component07: React.FC<Component07Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[24%] mt-[7%] w-[58%]"
               src="/balcony4.webp"
               alt="basement"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -100,10 +105,12 @@ const Component07: React.FC<Component07Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[18%] mt-[7%] w-[62%] lg:ml-[22%] lg:w-[57%]"
               src="/balcony3.webp"
               alt="terrace"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -117,10 +124,12 @@ const Component07: React.FC<Component07Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[22.5%] w-[62%] lg:ml-[24%] lg:w-[55%]"
               src="/bazen.webp"
               alt="pool"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -136,10 +145,12 @@ const Component07: React.FC<Component07Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[18%] mt-[15%] w-[62%] lg:ml-[25%] lg:w-[57%]"
               src="/sauna.webp"
               alt="sauna"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -153,10 +164,12 @@ const Component07: React.FC<Component07Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[15%] w-[62%] lg:ml-[24%] lg:w-[55%]"
               src="/domcek.webp"
               alt="gardenshed"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-1 left-12 text-[16px] font-bold leading-[16px]">

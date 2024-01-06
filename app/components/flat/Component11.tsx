@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { toast } from 'react-hot-toast';
 
@@ -52,10 +53,12 @@ const Component11: React.FC<Component11Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[22%] mt-[5%] w-[60%] lg:ml-[15%]"
               src="/bcond1.webp"
               alt="isolation"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-[15px] font-bold">
@@ -69,10 +72,12 @@ const Component11: React.FC<Component11Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[5%] w-[45%] lg:ml-[15%] lg:w-[53%]"
               src="/bcond2.webp"
               alt="newElevator"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-[15px] font-bold">
@@ -88,10 +93,12 @@ const Component11: React.FC<Component11Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[12%] mt-[8%] w-[43%]"
               src="/bcond3.webp"
               alt="newWindows"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-[15px] font-bold">
@@ -105,10 +112,12 @@ const Component11: React.FC<Component11Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[15%] mt-[7%] w-[55%]"
               src="/bcond4.webp"
               alt="newInstallations"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-1 text-[13.5px] font-bold">

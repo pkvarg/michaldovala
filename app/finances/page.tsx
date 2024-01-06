@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { BiSolidPhoneCall } from 'react-icons/bi';
+import Image from 'next/image';
 
 const Finances = () => {
   return (
@@ -14,10 +15,12 @@ const Finances = () => {
         <div className="grid grid-cols-1  gap-12 md:grid-cols-2">
           <div className="flex w-[310px] flex-col">
             <div className="flex flex-row items-center justify-between">
-              <img
+              <Image
                 className="-ml-2 h-[70px] w-[75px]"
-                src="hypo.webp"
+                src="/hypo.webp"
                 alt="hypo"
+                width={60}
+                height={60}
               />
               <p className="text-[35px] font-bold  tracking-[1px] text-[#256ca2]">
                 Hypotéky
@@ -33,10 +36,12 @@ const Finances = () => {
           </div>
           <div className="flex w-[310px] flex-col">
             <div className="flex flex-row items-center justify-between">
-              <img
+              <Image
                 className="-ml-2 h-[70px] w-[75px]"
-                src="insurance.webp"
+                src="/insurance.webp"
                 alt="insurance"
+                width={60}
+                height={60}
               />
               <p className="text-[35px] font-bold  tracking-[1px] text-[#256ca2]">
                 Poistenie
@@ -52,10 +57,12 @@ const Finances = () => {
           </div>
           <div className="flex w-[310px] flex-col">
             <div className="flex flex-row items-center justify-between">
-              <img
+              <Image
                 className="-ml-2 h-[70px] w-[75px]"
-                src="savings.webp"
+                src="/savings.webp"
                 alt="savings"
+                width={60}
+                height={60}
               />
               <p className="text-[35px] font-bold  tracking-[1px] text-[#256ca2]">
                 Úspory
@@ -72,10 +79,12 @@ const Finances = () => {
           </div>
           <div className="flex w-[310px] flex-col">
             <div className="flex flex-row items-center justify-between">
-              <img
+              <Image
                 className="-ml-2 h-[70px] w-[75px]"
-                src="investitions.webp"
+                src="/investitions.webp"
                 alt="investitions"
+                width={60}
+                height={60}
               />
               <p className="text-[35px] font-bold  tracking-[1px] text-[#256ca2]">
                 Investície

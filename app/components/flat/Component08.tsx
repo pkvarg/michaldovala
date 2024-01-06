@@ -1,5 +1,6 @@
 import React from 'react';
 import { toast } from 'react-hot-toast';
+import Image from 'next/image';
 
 interface Component08Props {
   onNext: any;
@@ -52,10 +53,12 @@ const Component08: React.FC<Component08Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[5%] w-[60%]"
               src="/balcony1.webp"
               alt="balcony1"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -69,10 +72,12 @@ const Component08: React.FC<Component08Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[24%] mt-[7%] w-[58%]"
               src="/balcony2.webp"
               alt="balcony2"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -88,10 +93,12 @@ const Component08: React.FC<Component08Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[18%] mt-[7%] w-[62%] lg:ml-[22%] lg:w-[57%]"
               src="/balcony3.webp"
               alt="balcony3"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -105,10 +112,12 @@ const Component08: React.FC<Component08Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[8%] w-[62%] lg:ml-[24%] lg:w-[55%]"
               src="/balcony4.webp"
               alt="balcony3"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">

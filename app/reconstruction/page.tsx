@@ -6,6 +6,7 @@ import { MdEuro } from 'react-icons/md';
 import { FaPerson } from 'react-icons/fa6';
 import { FaSmile } from 'react-icons/fa';
 import { RiRunLine } from 'react-icons/ri';
+import Image from 'next/image';
 
 const Reconstruction = () => {
   const phone = '+421944517560';
@@ -68,10 +69,12 @@ const Reconstruction = () => {
               </div>
             </div>
             <div className="mt-4 flex justify-center lg:mt-0 lg:justify-start">
-              <img
+              <Image
                 className="w-[350px] lg:w-[350px]"
-                src="reconstruction.webp"
+                src="/reconstruction.webp"
                 alt="kvalitnamontaz.sk"
+                width={60}
+                height={60}
               />
             </div>
           </div>

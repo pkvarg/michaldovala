@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 interface Component15Props {
@@ -31,15 +32,19 @@ const Component15: React.FC<Component15Props> = ({
       <h1 className="py-2 text-center text-[22.5px] font-bold leading-[22.5px] lg:py-2 lg:text-[25px] lg:leading-[27px]">
         Vaša nehnuteľnosť bola <br /> nacenená
       </h1>
-      <img
+      <Image
         className="absolute top-[19%] flex w-[17.5%] md:top-[7%] md:w-[12%] lg:left-[0%]  lg:top-[27%] lg:w-[25%]"
         src="/firework.webp"
         alt="firework"
+        width={60}
+        height={60}
       />
-      <img
+      <Image
         className="absolute right-0 top-[19%] flex w-[17.5%] md:top-[7%] md:w-[12%]  lg:right-[0%] lg:top-[27%] lg:w-[25%]"
         src="/firework.webp"
         alt="firework"
+        width={60}
+        height={60}
       />
       <div className="mt-14 flex flex-col justify-center">
         <label

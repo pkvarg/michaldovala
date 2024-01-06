@@ -1,5 +1,6 @@
 import React from 'react';
 import { toast } from 'react-hot-toast';
+import Image from 'next/image';
 
 interface Component09Props {
   onNext: any;
@@ -42,10 +43,12 @@ const Component09: React.FC<Component09Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[10%] mt-[18%] w-[80%] lg:ml-[12%]"
               src="/garage1.webp"
               alt="garage"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -59,10 +62,12 @@ const Component09: React.FC<Component09Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[32%] mt-[18%] w-[40%] lg:ml-[34%] lg:w-[37%]"
               src="/garage2.webp"
               alt="parking"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">

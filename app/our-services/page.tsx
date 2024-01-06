@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 const OurServices = () => {
   const phone = '+421944517560';
@@ -88,10 +89,12 @@ const OurServices = () => {
           <div className="flex flex-col justify-between gap-8 lg:gap-0">
             <div className="ml-8 flex flex-col items-start justify-center font-light lg:ml-0">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   className="-ml-[12px] h-[50px] w-[50px]"
-                  src="Predaj.webp"
+                  src="/Predaj.webp"
                   alt="sale"
+                  width={60}
+                  height={60}
                 />
                 <p className="text-[22.5px] font-semibold text-[#256ca2] lg:text-[18px]">
                   Predaj nehnuteľnosti
@@ -105,10 +108,12 @@ const OurServices = () => {
             </div>
             <div className="ml-8 flex flex-col items-start justify-center font-light lg:ml-0">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   className="-ml-[12px] h-[50px] w-[50px]"
-                  src="Property.webp"
+                  src="/Property.webp"
                   alt="sale"
+                  width={60}
+                  height={60}
                 />
                 <p className="text-[22.5px] font-semibold text-[#256ca2] lg:text-[18px]">
                   {' '}
@@ -124,10 +129,12 @@ const OurServices = () => {
             </div>
             <div className="ml-8 flex flex-col items-start justify-center font-light lg:ml-0">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   className="-ml-[12px] h-[50px] w-[50px]"
-                  src="Inziniering.webp"
+                  src="/Inziniering.webp"
                   alt="sale"
+                  width={60}
+                  height={60}
                 />
                 <p className="text-[22.5px] font-semibold text-[#256ca2] lg:text-[18px]">
                   {' '}
@@ -145,10 +152,12 @@ const OurServices = () => {
           <div className="flex flex-col justify-between gap-8 lg:gap-0">
             <div className="ml-8 flex flex-col items-start justify-center font-light lg:ml-0">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   className="-ml-[12px] h-[50px] w-[50px]"
-                  src="Prenajom.webp"
+                  src="/Prenajom.webp"
                   alt="sale"
+                  width={60}
+                  height={60}
                 />
                 <p className="text-[22.5px] font-semibold text-[#256ca2] lg:text-[18px]">
                   {' '}
@@ -164,10 +173,12 @@ const OurServices = () => {
             </div>
             <div className="ml-8 flex flex-col items-start justify-center font-light lg:ml-0">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   className="-ml-[12px] h-[50px] w-[50px]"
-                  src="Agent.webp"
+                  src="/Agent.webp"
                   alt="sale"
+                  width={60}
+                  height={60}
                 />
                 <p className="text-[22.5px] font-semibold text-[#256ca2] lg:text-[18px]">
                   {' '}
@@ -183,10 +194,12 @@ const OurServices = () => {
             </div>
             <div className="ml-8 flex flex-col items-start justify-center font-light lg:ml-0">
               <div className="flex flex-row items-center">
-                <img
+                <Image
                   className="-ml-[12px] h-[50px] w-[50px]"
-                  src="Legalizacia.webp"
+                  src="/Legalizacia.webp"
                   alt="sale"
+                  width={60}
+                  height={60}
                 />
                 <p className="text-[22.5px] font-semibold text-[#256ca2] lg:text-[18px]">
                   {' '}

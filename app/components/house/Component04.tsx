@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { toast } from 'react-hot-toast';
 
@@ -40,10 +41,12 @@ const Component04: React.FC<Component04Props> = ({
           className="relative flex h-[140px] w-[145px] flex-col rounded-[35px] border-2 border-[#0076ba] px-2 py-2 lg:h-[160px] lg:w-[165px]"
         >
           <div>
-            <img
+            <Image
               className="mt-[10%] w-[100%] lg:mt-[10%]"
               src="/cnd01.webp"
               alt="home01"
+              width={60}
+              height={60}
             />
             <div className="h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">
@@ -60,10 +63,12 @@ const Component04: React.FC<Component04Props> = ({
           className="relative flex h-[140px] w-[145px] flex-col rounded-[35px] border-2 border-[#0076ba] px-2 py-2 lg:h-[160px] lg:w-[165px]"
         >
           <div>
-            <img
+            <Image
               className="ml-[5%] mt-[10%] w-[70%] lg:mt-[8.5%]"
               src="/cnd02.webp"
               alt="home02"
+              width={60}
+              height={60}
             />
             <div className="h-[3px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">
@@ -82,10 +87,12 @@ const Component04: React.FC<Component04Props> = ({
           className="relative flex h-[140px] w-[145px] flex-col rounded-[35px] border-2 border-[#0076ba] px-2 py-2 lg:h-[160px] lg:w-[165px]"
         >
           <div>
-            <img
+            <Image
               className="mt-[10%] w-[100%] lg:mt-[8.5%]"
               src="/cnd03.webp"
               alt="home03"
+              width={60}
+              height={60}
             />
             <div className="h-[3px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">
@@ -102,10 +109,12 @@ const Component04: React.FC<Component04Props> = ({
           className="relative flex h-[140px] w-[145px] flex-col rounded-[35px] border-2 border-[#0076ba] px-2 py-2 lg:h-[160px] lg:w-[165px]"
         >
           <div>
-            <img
+            <Image
               className="ml-[7%] mt-[6%] w-[75%] lg:mt-[7%]"
               src="/cnd04.webp"
               alt="home04"
+              width={60}
+              height={60}
             />
             <div className="mt-2 h-[3px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">

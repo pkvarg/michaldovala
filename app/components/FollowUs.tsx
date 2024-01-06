@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FollowUs = () => {
   return (
@@ -7,7 +8,13 @@ const FollowUs = () => {
       href="https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=michaldovala"
       target="_blank"
     >
-      <img className="ml-4 w-[35px]" src="linkedin.webp" alt="linkedin" />
+      <Image
+        className="ml-4 w-[35px]"
+        src="/linkedin.webp"
+        alt="linkedin"
+        width={35}
+        height={35}
+      />
       <p>Sledujte ma</p>
     </a>
   );

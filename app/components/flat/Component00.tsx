@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 interface HandleFlatOrHouseProps {
   handleFlatOrHouse: any;
@@ -44,10 +45,13 @@ const Component00: React.FC<HandleFlatOrHouseProps> = ({
           className="flex h-[160px] w-[120px] flex-col gap-[90px] rounded-[25px] border-2 border-[#0076ba] px-2 py-2 lg:h-[220px] lg:w-[180px] lg:rounded-[35px]"
         >
           <div>
-            <img
-              className="ml-[23%] mt-[20%] w-[60%]"
+            <Image
+              className="ml-[23%] mt-[20%]"
               src="/flat1.webp"
               alt="flat"
+              width={60}
+              height={60}
+              priority
             />
             <p className="mt-4 text-center text-[20px] font-extrabold text-[#0076ba] lg:text-[25px]">
               Byt
@@ -60,10 +64,13 @@ const Component00: React.FC<HandleFlatOrHouseProps> = ({
           className="flex h-[160px] w-[120px] flex-col gap-[90px] rounded-[25px] border-2 border-[#0076ba] px-2 py-2 lg:h-[220px] lg:w-[180px] lg:rounded-[35px]"
         >
           <div>
-            <img
-              className="ml-[22.5%] mt-[20%] w-[60%]"
+            <Image
+              className="ml-[22.5%] mt-[20%]"
               src="/flat2.webp"
               alt="house"
+              width={60}
+              height={60}
+              priority
             />
             <p className="mt-4 text-center text-[20px] font-extrabold text-[#0076ba] lg:text-[25px]">
               Dom

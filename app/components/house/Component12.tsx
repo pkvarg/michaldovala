@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { toast } from 'react-hot-toast';
 
@@ -65,10 +66,12 @@ const Component12: React.FC<Component12Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[19%] mt-[10%] w-[70%]"
               src="/well.webp"
               alt="well"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -82,10 +85,12 @@ const Component12: React.FC<Component12Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/citywater.webp"
               alt="citywater"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -101,10 +106,12 @@ const Component12: React.FC<Component12Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/citysewerage.webp"
               alt="sewerage"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -119,10 +126,12 @@ const Component12: React.FC<Component12Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/septic.webp"
               alt="septic"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -138,10 +147,12 @@ const Component12: React.FC<Component12Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[20%] mt-[10%] w-[60%]"
               src="/electricity.webp"
               alt="electricity"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-2 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -156,10 +167,12 @@ const Component12: React.FC<Component12Props> = ({
           className="relative flex h-[120px] w-[125px] flex-col rounded-[25px] border-2 border-[#0076ba] px-2 py-2"
         >
           <div>
-            <img
+            <Image
               className="ml-[15%] mt-[8%] w-[75%]"
               src="/gas.webp"
               alt="gas"
+              width={60}
+              height={60}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">

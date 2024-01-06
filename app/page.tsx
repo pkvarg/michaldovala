@@ -23,10 +23,13 @@ export default function Home() {
             </div>
 
             <div className="w-auto">
-              <img
+              <Image
                 className="mt-2 h-[150px] w-[150px] rounded-full border-[4px] border-[#0376b7] md:h-[200px] md:w-[200px] lg:mt-0 lg:h-[290px] lg:w-[290px] lg:border-[5px]"
-                src="about.webp"
+                src="/about.webp"
                 alt="dovala"
+                width={290}
+                height={290}
+                priority={true}
               />
             </div>
           </div>
