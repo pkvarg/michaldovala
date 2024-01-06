@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-// import { houseResult } from '../getHouseResults';
+import { houseResult } from './../utils/getHouseResults';
 // import { SpinnerFullPage } from '../components';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
@@ -248,16 +248,16 @@ const CalculatorHouse = () => {
       hasUnderfloorHeating: hasUnderfloorHeating,
     };
     console.log('housestartcalc', calcValues);
-    // const calculated = houseResult(calcValues);
-    // if (calculated) {
-    //   setPrice(calculated.price);
-    //   console.log('...HOUSE-RESULTS', calculated);
-    //   return new Promise((resolve) => {
-    //     setTimeout(() => {
-    //       resolve(calculated);
-    //     }, 2000); // Simulating a 2-second calculation
-    //   });
-    // }
+    const calculated = houseResult(calcValues);
+    if (calculated) {
+      setPrice(calculated.price);
+      console.log('...HOUSE-RESULTS', calculated);
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(calculated);
+        }, 2000); // Simulating a 2-second calculation
+      });
+    }
   };
 
   const [email, setEmail] = useState('');
@@ -582,6 +582,7 @@ const CalculatorHouse = () => {
             checkBox={checkBox}
             setCheckBox={setCheckBox}
             isLoading={isLoading}
+            handleSubmitForm={handleSubmitForm}
           />
         );
       case 16:
@@ -639,7 +640,7 @@ const CalculatorHouse = () => {
       email: email,
       price: resprice,
     };
-    console.log('..sending..');
+    console.log('..sendingHouseEmail..', calcValues);
     const { data } = await axios.put(
       //`https://api.pictusweb.com/api/md/email-house`,
       `http://localhost:2000/api/md/email-house`,
@@ -660,10 +661,10 @@ const CalculatorHouse = () => {
       setIsLoading(true);
 
       const res = await startCalculation();
-      // if (res) {
-      //   console.log('resawait house', res);
-      //   sendEmail((res as { price: number }).price);
-      // }
+      if (res) {
+        console.log('resawait house', res);
+        sendEmail((res as { price: number }).price);
+      }
 
       setTimeout(handleNext, 4000);
     }

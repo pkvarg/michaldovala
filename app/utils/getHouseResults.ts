@@ -675,4 +675,4 @@ const testValues = {
   hasUnderfloorHeating: true,
 };
 
-houseResult(testValues);
+//houseResult(testValues);
