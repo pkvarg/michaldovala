@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Michal Dovala',
     images: [
       {
-        url: '/opengraph-image.png',
+        url: '/michaldovala.png',
         width: 1260,
         height: 800,
       },
