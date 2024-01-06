@@ -54,7 +54,6 @@ export const result = (calcValues: CalcValues) => {
   result.push(bratislava);
 
   const getDistrictPrice = (street: string) => {
-    // kedy district = spolu?
     const resdis = streetAndDistrict.find(
       (strt: any) => strt.street === street,
     );
