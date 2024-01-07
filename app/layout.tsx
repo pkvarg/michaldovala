@@ -45,14 +45,14 @@ export default function RootLayout({
         />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="michaldovala.sk" />
-        <meta property="og:url" content="https://michaldovala.sk" />
+        <meta property="og:url" content="https://www.michaldovala.sk" />
         <meta property="og:title" content="Michal Dovala" />
 
-        <meta property="fb:app_id" content="627076731624225" />
         <meta
           property="og:image"
-          content="https://michaldovala.sk/michaldovala.png"
+          content="https://www.michaldovala.sk/michaldovala.png"
         />
+        <meta property="fb:app_id" content="627076731624225" />
       </head>
       <body className={myFont.className}>
         <Toaster />
