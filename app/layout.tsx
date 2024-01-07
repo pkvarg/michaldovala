@@ -9,19 +9,19 @@ const myFont = localFont({ src: './fonts/trebuc.ttf' });
 export const metadata: Metadata = {
   title: 'Michal Dovala',
   description: 'Domov, o ktorom snívate na dosah ruky',
-  openGraph: {
-    title: 'Michal Dovala',
-    description: 'Domov, o ktorom snívate na dosah ruky',
-    url: 'https://michaldovala.sk',
-    siteName: 'Michal Dovala',
-    // images: [
-    //   {
-    //     url: 'https://michaldovala.sk/michaldovala.png',
-    //     width: 1260,
-    //     height: 800,
-    //   },
-    // ],
-  },
+  // openGraph: {
+  //   title: 'Michal Dovala',
+  //   description: 'Domov, o ktorom snívate na dosah ruky',
+  //   url: 'https://michaldovala.sk',
+  //   siteName: 'Michal Dovala',
+  //   images: [
+  //     {
+  //       url: 'https://michaldovala.sk/michaldovala.png',
+  //       width: 1260,
+  //       height: 800,
+  //     },
+  //   ],
+  // },
 };
 
 export default function RootLayout({
@@ -32,6 +32,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta property="title" content="Michal Dovala" />
+        <meta
+          property="description"
+          content="Domov, o ktorom snívate na dosah ruky"
+        />
+
+        <meta property="og:title" content="Michal Dovala" />
+        <meta
+          property="og:description"
+          content="Domov, o ktorom snívate na dosah ruky"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="michaldovala.sk" />
+        <meta property="og:url" content="https://michaldovala.sk" />
+        <meta property="og:title" content="Michal Dovala" />
+
         <meta property="fb:app_id" content="627076731624225" />
         <meta
           property="og:image"
