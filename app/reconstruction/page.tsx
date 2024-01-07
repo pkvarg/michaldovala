@@ -73,8 +73,8 @@ const Reconstruction = () => {
                 className="w-[350px] lg:w-[350px]"
                 src="/reconstruction.webp"
                 alt="kvalitnamontaz.sk"
-                width={60}
-                height={60}
+                width={700}
+                height={700}
               />
             </div>
           </div>

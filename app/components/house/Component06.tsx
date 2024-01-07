@@ -48,8 +48,8 @@ const Component06: React.FC<Component06Props> = ({
               className="mt-[10%] w-[50%] lg:mt-[2%]"
               src="/bungalov.webp"
               alt="home01"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[70%] text-[15px] font-bold lg:text-[17.5px]">
@@ -67,8 +67,8 @@ const Component06: React.FC<Component06Props> = ({
               className="ml-[5%] mt-[15%] w-[45%] lg:mt-[7%]"
               src="/klasicky.webp"
               alt="home02"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[70%] text-[15px] font-bold lg:text-[17.5px]">
@@ -88,8 +88,8 @@ const Component06: React.FC<Component06Props> = ({
               className="mt-[10%] w-[50%] lg:mt-[8.5%]"
               src="/dvojgeneracny.webp"
               alt="home03"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[2px] bg-[#000000]"></div>
             <p className="absolute right-2 top-[70%] text-[13.5px] font-bold lg:text-[16px] ">
@@ -107,8 +107,8 @@ const Component06: React.FC<Component06Props> = ({
               className="ml-[7%] mt-[11%] w-[70%] lg:mt-[11%]"
               src="/vila.webp"
               alt="home04"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="mt-2 h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[70%] text-[15px] font-bold lg:text-[17.5px]">

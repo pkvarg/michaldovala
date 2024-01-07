@@ -43,8 +43,8 @@ const Component03: React.FC<Component03Props> = ({
               className="mt-[10%] w-[100%] lg:mt-[10%]"
               src="/cnd01.webp"
               alt="home01"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">
@@ -65,8 +65,8 @@ const Component03: React.FC<Component03Props> = ({
               className="ml-[5%] mt-[10%] w-[70%] lg:mt-[8.5%]"
               src="/cnd02.webp"
               alt="home02"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[3px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">
@@ -89,8 +89,8 @@ const Component03: React.FC<Component03Props> = ({
               className="mt-[10%] w-[100%] lg:mt-[8.5%]"
               src="/cnd03.webp"
               alt="home03"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[3px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">
@@ -111,8 +111,8 @@ const Component03: React.FC<Component03Props> = ({
               className="ml-[7%] mt-[6%] w-[75%] lg:mt-[7%]"
               src="/cnd04.webp"
               alt="home04"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="mt-2 h-[3px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[62.5%] text-[15px] font-bold lg:text-[17.5px]">

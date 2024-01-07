@@ -40,8 +40,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[25%] mt-[10%] w-[50%] lg:mt-[10%]"
               src="/elevator1.webp"
               alt="elevator"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -59,8 +59,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[19%] mt-[10%] w-[60%] lg:mt-[10%]"
               src="/elevator2.webp"
               alt="stairs"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">

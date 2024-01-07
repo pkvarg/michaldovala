@@ -57,8 +57,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[22%] mt-[5%] w-[60%] lg:ml-[15%]"
               src="/bcond1.webp"
               alt="isolation"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-[15px] font-bold">
@@ -76,8 +76,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[20%] mt-[5%] w-[45%] lg:ml-[15%] lg:w-[53%]"
               src="/bcond2.webp"
               alt="newElevator"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-[15px] font-bold">
@@ -97,8 +97,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[12%] mt-[8%] w-[43%]"
               src="/bcond3.webp"
               alt="newWindows"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-[15px] font-bold">
@@ -116,8 +116,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[15%] mt-[7%] w-[55%]"
               src="/bcond4.webp"
               alt="newInstallations"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-1 text-[13.5px] font-bold">

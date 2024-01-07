@@ -116,8 +116,8 @@ const Ebook = () => {
               className="w-[100%] shadow-2xl"
               src="/ebook.webp"
               alt="ebook_cover"
-              width={60}
-              height={60}
+              width={700}
+              height={700}
             />
           </div>
         </div>

@@ -70,8 +70,8 @@ const Component14: React.FC<Component14Props> = ({
               className="ml-[19%] mt-[10%] w-[60%]"
               src="/radiatory.webp"
               alt="ElectricRadiators"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -89,8 +89,8 @@ const Component14: React.FC<Component14Props> = ({
               className="ml-[22.5%] mt-[10.5%] w-[60%]"
               src="/tepelne.webp"
               alt="HeatPump"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-3 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -110,8 +110,8 @@ const Component14: React.FC<Component14Props> = ({
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/tuhe.webp"
               alt="SolidFuel"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -130,8 +130,8 @@ const Component14: React.FC<Component14Props> = ({
               className="ml-[22.5%] mt-[10.5%] w-[60%]"
               src="/plynovy.webp"
               alt="GasBoiler"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -151,8 +151,8 @@ const Component14: React.FC<Component14Props> = ({
               className="ml-[25%] mt-[15%] w-[50%]"
               src="/podlahove.webp"
               alt="UnderfloorHeating"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-2 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -171,8 +171,8 @@ const Component14: React.FC<Component14Props> = ({
               className="ml-[25%] mt-[17.5%] w-[53%]"
               src="/other.webp"
               alt="other"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-4 text-right text-[12.5px] font-bold leading-[12.5px]">

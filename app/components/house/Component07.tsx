@@ -69,8 +69,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[20%] mt-[20%] w-[60%]"
               src="/garage1.webp"
               alt="garage"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -88,8 +88,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[24%] mt-[7%] w-[58%]"
               src="/balcony4.webp"
               alt="basement"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -109,8 +109,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[18%] mt-[7%] w-[62%] lg:ml-[22%] lg:w-[57%]"
               src="/balcony3.webp"
               alt="terrace"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -128,8 +128,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[20%] mt-[22.5%] w-[62%] lg:ml-[24%] lg:w-[55%]"
               src="/bazen.webp"
               alt="pool"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -149,8 +149,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[18%] mt-[15%] w-[62%] lg:ml-[25%] lg:w-[57%]"
               src="/sauna.webp"
               alt="sauna"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -168,8 +168,8 @@ const Component07: React.FC<Component07Props> = ({
               className="ml-[20%] mt-[15%] w-[62%] lg:ml-[24%] lg:w-[55%]"
               src="/domcek.webp"
               alt="gardenshed"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-1 left-12 text-[16px] font-bold leading-[16px]">

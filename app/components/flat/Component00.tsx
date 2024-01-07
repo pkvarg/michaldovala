@@ -46,7 +46,7 @@ const Component00: React.FC<HandleFlatOrHouseProps> = ({
         >
           <div>
             <Image
-              className="ml-[23%] mt-[20%] 2xl:ml-[31%]"
+              className="ml-[23%] mt-[20%] xl:ml-[31%]"
               src="/flat1.webp"
               alt="flat"
               width={60}
@@ -65,7 +65,7 @@ const Component00: React.FC<HandleFlatOrHouseProps> = ({
         >
           <div>
             <Image
-              className="ml-[22.5%] mt-[20%] 2xl:ml-[31%]"
+              className="ml-[22.5%] mt-[20%] xl:ml-[31%]"
               src="/flat2.webp"
               alt="house"
               width={60}

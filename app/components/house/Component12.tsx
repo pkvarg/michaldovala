@@ -70,8 +70,8 @@ const Component12: React.FC<Component12Props> = ({
               className="ml-[19%] mt-[10%] w-[70%]"
               src="/well.webp"
               alt="well"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -89,8 +89,8 @@ const Component12: React.FC<Component12Props> = ({
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/citywater.webp"
               alt="citywater"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -110,8 +110,8 @@ const Component12: React.FC<Component12Props> = ({
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/citysewerage.webp"
               alt="sewerage"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -130,8 +130,8 @@ const Component12: React.FC<Component12Props> = ({
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/septic.webp"
               alt="septic"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -151,8 +151,8 @@ const Component12: React.FC<Component12Props> = ({
               className="ml-[20%] mt-[10%] w-[60%]"
               src="/electricity.webp"
               alt="electricity"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-2 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -171,8 +171,8 @@ const Component12: React.FC<Component12Props> = ({
               className="ml-[15%] mt-[8%] w-[75%]"
               src="/gas.webp"
               alt="gas"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">

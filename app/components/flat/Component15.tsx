@@ -36,15 +36,15 @@ const Component15: React.FC<Component15Props> = ({
         className="absolute top-[19%] flex w-[17.5%] md:top-[7%] md:w-[12%] lg:left-[0%]  lg:top-[27%] lg:w-[25%]"
         src="/firework.webp"
         alt="firework"
-        width={60}
-        height={60}
+        width={200}
+        height={200}
       />
       <Image
         className="absolute right-0 top-[19%] flex w-[17.5%] md:top-[7%] md:w-[12%]  lg:right-[0%] lg:top-[27%] lg:w-[25%]"
         src="/firework.webp"
         alt="firework"
-        width={60}
-        height={60}
+        width={200}
+        height={200}
       />
       <div className="mt-14 flex flex-col justify-center">
         <label

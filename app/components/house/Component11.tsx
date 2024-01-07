@@ -70,8 +70,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[19%] mt-[10%] w-[70%]"
               src="/smart1.webp"
               alt="termostat"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -89,8 +89,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/alarm.webp"
               alt="security"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -110,8 +110,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[20%] mt-[10.5%] w-[60%]"
               src="/firealarm.webp"
               alt="firealarm"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -130,8 +130,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[20%] mt-[10.5%] w-[50%]"
               src="/solarne.webp"
               alt="security"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -151,8 +151,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[27.5%] mt-[10%] w-[45%]"
               src="/smart3.webp"
               alt="camerasystem"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-2 text-right text-[12.5px] font-bold leading-[12.5px]">
@@ -171,8 +171,8 @@ const Component11: React.FC<Component11Props> = ({
               className="ml-[25%] mt-[12.5%] w-[53%]"
               src="/smart2.webp"
               alt="internet"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-2 right-3 text-right text-[12.5px] font-bold leading-[12.5px]">

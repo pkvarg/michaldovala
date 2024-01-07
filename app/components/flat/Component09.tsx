@@ -47,8 +47,8 @@ const Component09: React.FC<Component09Props> = ({
               className="ml-[10%] mt-[18%] w-[80%] lg:ml-[12%]"
               src="/garage1.webp"
               alt="garage"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -66,8 +66,8 @@ const Component09: React.FC<Component09Props> = ({
               className="ml-[32%] mt-[18%] w-[40%] lg:ml-[34%] lg:w-[37%]"
               src="/garage2.webp"
               alt="parking"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">

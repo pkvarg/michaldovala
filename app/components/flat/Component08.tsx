@@ -57,8 +57,8 @@ const Component08: React.FC<Component08Props> = ({
               className="ml-[20%] mt-[5%] w-[60%]"
               src="/balcony1.webp"
               alt="balcony1"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -76,8 +76,8 @@ const Component08: React.FC<Component08Props> = ({
               className="ml-[24%] mt-[7%] w-[58%]"
               src="/balcony2.webp"
               alt="balcony2"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -97,8 +97,8 @@ const Component08: React.FC<Component08Props> = ({
               className="ml-[18%] mt-[7%] w-[62%] lg:ml-[22%] lg:w-[57%]"
               src="/balcony3.webp"
               alt="balcony3"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">
@@ -116,8 +116,8 @@ const Component08: React.FC<Component08Props> = ({
               className="ml-[20%] mt-[8%] w-[62%] lg:ml-[24%] lg:w-[55%]"
               src="/balcony4.webp"
               alt="balcony3"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
 
             <p className="absolute bottom-0 right-3 text-[20px] font-bold">

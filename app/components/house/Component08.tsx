@@ -48,8 +48,8 @@ const Component08: React.FC<Component08Props> = ({
               className="mt-[10%] w-[100%] lg:mt-[10%]"
               src="/rovinaty.webp"
               alt="home01"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[70%] text-[15px] font-bold lg:text-[17.5px]">
@@ -67,8 +67,8 @@ const Component08: React.FC<Component08Props> = ({
               className="ml-[5%] mt-[10%] w-[100%] lg:mt-[12%]"
               src="/svahovity.webp"
               alt="home02"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="mt-0.5 h-[2px] bg-[#000000]"></div>
             <p className="absolute right-4 top-[70%] text-[15px] font-bold lg:text-[17.5px]">
@@ -88,8 +88,8 @@ const Component08: React.FC<Component08Props> = ({
               className="mt-[10%] w-[100%] lg:mt-[8.5%]"
               src="/strmy.webp"
               alt="home03"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="mt-1 h-[2px] bg-[#000000]"></div>
             <p className="absolute right-2 top-[70%] text-[13.5px] font-bold lg:text-[16px] ">
@@ -107,8 +107,8 @@ const Component08: React.FC<Component08Props> = ({
               className="ml-[7%] mt-[15%] w-[80%] lg:mt-[14%]"
               src="/terasovity.webp"
               alt="home04"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
             />
             <div className="mt-0.5 h-[2px] bg-[#000000] lg:mt-0"></div>
             <p className="absolute right-4 top-[70%] text-[15px] font-bold lg:text-[17.5px]">
