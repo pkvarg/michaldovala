@@ -50,11 +50,11 @@ export default function RootLayout({
 
         <meta
           property="og:image"
-          content="https://www.michaldovala.sk/michaldovala2.png"
+          content="https://www.michaldovala.sk/michaldovala3.png"
         />
         <meta property="og:image:type" content="png" />
         <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:height" content="400" />
         <meta property="og:image:alt" content="michaldovala.sk" />
         <meta property="fb:app_id" content="627076731624225" />
       </head>
