@@ -52,6 +52,10 @@ export default function RootLayout({
           property="og:image"
           content="https://www.michaldovala.sk/michaldovala.png"
         />
+        <meta property="og:image:type" content="png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="michaldovala.sk" />
         <meta property="fb:app_id" content="627076731624225" />
       </head>
       <body className={myFont.className}>
