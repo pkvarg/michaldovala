@@ -2,8 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { result } from './../utils/getFlatResults';
-import dynamic from 'next/dynamic';
-import SpinnerFullPage from '../components/spinner/SpinnerFullPage';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
