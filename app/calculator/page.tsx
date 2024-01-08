@@ -2,11 +2,21 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { result } from './../utils/getFlatResults';
-//import { SpinnerFullPage } from '../components';
+import dynamic from 'next/dynamic';
+import SpinnerFullPage from '../components/spinner/SpinnerFullPage';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+// const Component00 = dynamic(() => import('../components/flat/Component00'));
+// const Component01 = dynamic(() => import('../components/flat/Component01'));
+// const Component02 = dynamic(() => import('../components/flat/Component02'));
+// const Component03 = dynamic(() => import('../components/flat/Component03'));
+// const Component04 = dynamic(() => import('../components/flat/Component04'));
+// const Component05 = dynamic(() => import('../components/flat/Component05'));
+// const Component06 = dynamic(() => import('../components/flat/Component06'));
+
 import Component00 from '../components/flat/Component00';
 import Component01 from '../components/flat/Component01';
 import Component02 from '../components/flat/Component02';
@@ -577,7 +587,6 @@ const Calculator = () => {
 
   return (
     <>
-      {/* <Suspense fallback={<SpinnerFullPage />}> */}
       <div className="relative grid h-[97.5vh] grid-rows-3 bg-white text-[30px] lg:h-screen">
         <div className="h-[min-content]">
           <Navbar />
@@ -591,7 +600,6 @@ const Calculator = () => {
           <Footer />
         </div>
       </div>
-      {/* </Suspense> */}
     </>
   );
 };
