@@ -50,7 +50,7 @@ export default function RootLayout({
 
         <meta
           property="og:image"
-          content="https://www.michaldovala.sk/michaldovala6.png"
+          content="https://www.michaldovala.sk/md.jpeg"
         />
         <meta property="og:image:type" content="png" />
         <meta property="og:image:width" content="400" />
