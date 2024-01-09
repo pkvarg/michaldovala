@@ -24,28 +24,29 @@ const Contact = () => {
     console.log('subbbbb');
     if (passwordGroupOne !== x || passwordGroupTwo !== y) {
       toast.error('Nastala chyba.');
-    }
-    try {
-      console.log('..email is sending..');
-      const { data } = await axios.put(
-        `https://api.pictusweb.com/api/md/contact`,
-        // `http://localhost:2000/api/md/contact`,
-        {
-          name,
-          email,
-          phone,
-          message,
-        },
-      );
+    } else {
+      try {
+        console.log('..email is sending..');
+        const { data } = await axios.put(
+          `https://api.pictusweb.com/api/md/contact`,
+          // `http://localhost:2000/api/md/contact`,
+          {
+            name,
+            email,
+            phone,
+            message,
+          },
+        );
 
-      if (data.status === 'Success') toast.success('Správa úspešne odoslaná');
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
-    } catch (error: any) {
-      console.log(error);
-      toast.error(error.message);
+        if (data.status === 'Success') toast.success('Správa úspešne odoslaná');
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+      } catch (error: any) {
+        console.log(error);
+        toast.error(error.message);
+      }
     }
   };
   return (
