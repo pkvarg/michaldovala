@@ -46,10 +46,10 @@ export const result = (calcValues: CalcValues) => {
   const bratislava = 252524;
   const averageTotalSquareMeterPrice = 3860;
   const averageTotalBratislavaSquareMeterPrice = 4073;
-  let holdValue: number;
-  let districtValueHold: number | undefined;
-  let roomValueHold: number | undefined;
-  let averageOfDistrictPlusRoom: number;
+  let holdValue: number = 0;
+  let districtValueHold: number = 0;
+  let roomsPrice: number = 0;
+  let averageOfDistrictPlusRoom: number = 0;
   const result: any = [];
   result.push(bratislava);
 
@@ -67,7 +67,7 @@ export const result = (calcValues: CalcValues) => {
     let disPrice: number | undefined = resdisprice?.districtPrice;
 
     console.log('districtPrice', disPrice);
-    districtValueHold = disPrice;
+    if (disPrice) districtValueHold = disPrice;
     result.push(disPrice);
     console.log('resArray', result);
   };
@@ -78,10 +78,10 @@ export const result = (calcValues: CalcValues) => {
     const resroomsprice = roomsAndPrice.find(
       (rooms: any) => parseInt(rooms.rooms) == countRooms,
     );
-    const roomsPrice: number | undefined = resroomsprice?.roomsPrice;
+    if (resroomsprice) roomsPrice = resroomsprice.roomsPrice;
 
     result.push(roomsPrice);
-    roomValueHold = roomsPrice;
+
     console.log(result);
   };
 
@@ -95,8 +95,7 @@ export const result = (calcValues: CalcValues) => {
       if (houseCondition === 4) return 0.5;
     };
 
-    if (districtValueHold && roomValueHold)
-      averageOfDistrictPlusRoom = (districtValueHold + roomValueHold) / 2;
+    averageOfDistrictPlusRoom = (districtValueHold + roomsPrice) / 2;
     console.log('averageOfDistrictPlusRoom', averageOfDistrictPlusRoom);
 
     const houseConditionPrice = getConditionCoeficient(houseCondition);
