@@ -288,8 +288,8 @@ export const houseResult = (calcValues: CalcValues) => {
       if (builtYear >= 2018 && builtYear <= currentYear) return 1;
       if (builtYear >= 2010 && builtYear <= 2017) return 0.9;
       if (builtYear >= 2000 && builtYear <= 2009) return 0.85;
-      if (builtYear >= 1989 && builtYear <= 1999) return 0.75;
-      if (builtYear >= 1950 && builtYear <= 1988) return 0.5;
+      if (builtYear >= 1990 && builtYear <= 1999) return 0.75;
+      if (builtYear >= 1950 && builtYear <= 1989) return 0.5;
       if (builtYear < 1950) return 1;
     };
 

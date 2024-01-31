@@ -44,8 +44,8 @@ type CalcValues = {
 
 export const result = (calcValues: CalcValues) => {
   const bratislava = 235643;
-  const averageTotalSquareMeterPrice = 3860;
-  const averageTotalBratislavaSquareMeterPrice = 4073;
+  const averageTotalSquareMeterPrice = 3676;
+  const averageTotalBratislavaSquareMeterPrice = 3520;
   let holdValue: number = 0;
   let districtValueHold: number = 0;
   let roomsPrice: number = 0;
@@ -240,8 +240,8 @@ export const result = (calcValues: CalcValues) => {
       if (builtYear >= 2018 && builtYear <= currentYear) return 1;
       if (builtYear >= 2010 && builtYear <= 2017) return 0.9;
       if (builtYear >= 2000 && builtYear <= 2009) return 0.85;
-      if (builtYear >= 1989 && builtYear <= 1999) return 0.75;
-      if (builtYear >= 1950 && builtYear <= 1988) return 0.5;
+      if (builtYear >= 1991 && builtYear <= 1999) return 0.75;
+      if (builtYear >= 1950 && builtYear <= 1990) return 0.5;
       if (builtYear < 1950) return 1;
     };
 
