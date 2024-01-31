@@ -1,6 +1,6 @@
 import streetAndDistrict from './../json/streetAndDistrict.json';
-import districtAndPrice from './../json/districtAndPrice.json';
-import roomsAndPrice from './../json/roomsAndPrice.json';
+import districtAndPrice from './../json/districtAndPriceHouse.json';
+import roomsAndPrice from './../json/roomsAndPriceHouse.json';
 
 // const streetAndDistrict = require('./../json/streetAndDistrict.json');
 // const districtAndPrice = require('./../json/districtAndPrice.json');
@@ -126,8 +126,8 @@ export const houseResult = (calcValues: CalcValues) => {
 
   const getConditionPrice = (houseCondition: number) => {
     const getConditionCoeficient = (houseCondition: number) => {
-      if (houseCondition === 1) return 1.3;
-      if (houseCondition === 2) return 1;
+      if (houseCondition === 1) return 1.7;
+      if (houseCondition === 2) return 1.2;
       if (houseCondition === 3) return 0.65;
       if (houseCondition === 4) return 0.5;
     };

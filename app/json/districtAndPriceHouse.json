@@ -1,26 +1,26 @@
 [
   {
     "district": "BA I",
-    "districtPrice": 330540
+    "districtPrice": 707232
   },
   {
     "district": "BA II",
-    "districtPrice": 206604
+    "districtPrice": 416898
   },
   {
     "district": "BA III",
-    "districtPrice": 193222
+    "districtPrice": 374392
   },
   {
     "district": "BA IV",
-    "districtPrice": 228576
+    "districtPrice": 418382
   },
   {
     "district": "BA V",
-    "districtPrice": 225184
+    "districtPrice": 398348
   },
   {
     "district": "Spolu",
-    "districtPrice": 235643
+    "districtPrice": 431738
   }
 ]
