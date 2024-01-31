@@ -45,7 +45,7 @@ type CalcValues = {
 
 export const houseResult = (calcValues: CalcValues) => {
   console.log('HouseRes', calcValues);
-  const bratislava = 252524;
+  const bratislava = 431738;
   const averageTotalSquareMeterPrice = 3860;
   const averageTotalBratislavaSquareMeterPrice = 4073;
   let districtValueHold: number = 0;

@@ -43,7 +43,7 @@ type CalcValues = {
 };
 
 export const result = (calcValues: CalcValues) => {
-  const bratislava = 252524;
+  const bratislava = 235643;
   const averageTotalSquareMeterPrice = 3860;
   const averageTotalBratislavaSquareMeterPrice = 4073;
   let holdValue: number = 0;
