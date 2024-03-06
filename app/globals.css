@@ -12,6 +12,10 @@ body {
   color: #a09a9e !important;
 }
 
+.test {
+  color: #c8de84;
+}
+
 .form-control {
   display: none;
 }
@@ -96,6 +100,15 @@ button {
   background-repeat: no-repeat;
   width: 250px;
   height: 175px;
+}
+
+.portfolio-hero {
+  background-image: url('./../public/port_hero.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
