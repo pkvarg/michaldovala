@@ -102,6 +102,12 @@ button {
   height: 175px;
 }
 
+.alfa-slab {
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .portfolio-hero {
   background-image: url('./../public/port_hero.webp');
   background-size: cover;

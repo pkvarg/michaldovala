@@ -20,13 +20,31 @@ const Portfolio = () => {
           <span>na mieru</span>
         </p>
       </div>
-      <div className="absolute right-[15%] top-[40%]">
+      <div className="z-1 absolute -right-[15%] top-[20%]">
         <Image
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           alt="michal dovala"
           src="/md_no_text.webp"
         ></Image>
+      </div>
+      <div className="alfa-slab z-999 absolute right-[30%] top-[50%] text-center">
+        <h1 className="text-[175px] font-[900] uppercase text-white">
+          <span className="inline-block">M</span>
+          <span className="inline-block">i</span>
+          <span className="inline-block">c</span>
+          <span className="inline-block">h</span>
+          <span className="inline-block">a</span>
+          <span className="inline-block">l</span>
+        </h1>
+        <h2 className="-mt-[20%] text-[175px] font-[900] uppercase text-black">
+          <span className="inline-block">D</span>
+          <span className="inline-block">o</span>
+          <span className="inline-block">v</span>
+          <span className="inline-block">a</span>
+          <span className="inline-block">l</span>
+          <span className="inline-block">a</span>
+        </h2>
       </div>
     </div>
   );
