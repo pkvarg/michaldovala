@@ -3,10 +3,9 @@ import React from 'react';
 const Header = () => {
   return (
     <div className="flex flex-row justify-between px-[5%] pt-[2%] uppercase text-[#ffffff]">
-      <div className="-gap-2 flex flex-col bg-[#000000] px-4 py-3 text-[20px]">
+      <div className="-gap-2 flex flex-col bg-[#000000] px-4 py-1 text-[20px]">
         <p>Michal</p>
         <p>Dovala</p>
-        <p>Galéria</p>
       </div>
       <div>
         <div className="mr-4 mt-4 h-[55px] w-[96.5%] bg-[#edd900]"></div>
