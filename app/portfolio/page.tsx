@@ -1,8 +1,14 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Header from '../components/portfolio/Header';
 import Image from 'next/image';
+import Gallery2 from '../components/portfolio/Gallery2';
+import Gallery3 from '../components/portfolio/Gallery3';
+import Gallery4 from '../components/portfolio/Gallery4';
 
 const Portfolio = () => {
+  const [slideNo, setSlideNo] = useState(3);
+
   return (
     <>
       <div className="relative hidden h-screen flex-col bg-[#060085] lg:flex">
@@ -56,6 +62,10 @@ const Portfolio = () => {
           alt="michal dovala"
         />
       </div>
+      <Gallery2 />
+      <Gallery3 slideNo={slideNo} setSlideNo={setSlideNo} />
+      {/* {slideNo === 0 && <Gallery3 slideNo={slideNo} setSlideNo={setSlideNo} />}
+      {slideNo === 1 && <Gallery4 slideNo={slideNo} setSlideNo={setSlideNo} />} */}
     </>
   );
 };
