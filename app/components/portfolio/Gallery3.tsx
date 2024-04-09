@@ -17,19 +17,25 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
           <Header />
         </div>
         <div>
-          <Image
-            height={1000}
-            width={1000}
-            alt="michal dovala"
-            src={`/gallery${slideNo}.webp`}
-            className="w-screen"
-          />
+          {slideNo <= 7 && (
+            <Image
+              height={1000}
+              width={1000}
+              alt="michal dovala"
+              src={`/gallery${slideNo}.webp`}
+              className="w-screen"
+            />
+          )}
         </div>
       </div>
 
       <div className="flex lg:hidden">
         <Image
-          src={`/mobile_gallery${slideNo}.webp`}
+          src={
+            slideNo <= 7
+              ? `/mobile_gallery${slideNo}.webp`
+              : `/mobile_gallery6.webp`
+          }
           height={1000}
           width={1000}
           alt="michal dovala"
@@ -37,7 +43,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
       </div>
       <div className="relative">
         <div className="absolute right-[7.5%] top-[40px] flex">
-          {slideNo > 0 && (
+          {slideNo > 3 && (
             <Image
               width={50}
               height={50}

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/portfolio/Header';
 import Image from 'next/image';
 import Gallery2 from '../components/portfolio/Gallery2';
@@ -8,6 +8,12 @@ import Gallery4 from '../components/portfolio/Gallery4';
 
 const Portfolio = () => {
   const [slideNo, setSlideNo] = useState(3);
+
+  useEffect(() => {
+    if (slideNo > 7) {
+      setSlideNo(7);
+    }
+  }, [slideNo]);
 
   return (
     <>
