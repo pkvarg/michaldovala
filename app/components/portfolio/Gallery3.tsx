@@ -30,16 +30,14 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
       </div>
 
       <div className="flex lg:hidden">
-        <Image
-          src={
-            slideNo <= 7
-              ? `/mobile_gallery${slideNo}.webp`
-              : `/mobile_gallery6.webp`
-          }
-          height={1000}
-          width={1000}
-          alt="michal dovala"
-        />
+        {slideNo <= 7 && (
+          <Image
+            src={`/mobile_gallery${slideNo}.webp`}
+            height={1000}
+            width={1000}
+            alt="michal dovala"
+          />
+        )}
       </div>
       <div className="relative">
         <div className="absolute right-[7.5%] top-[40px] flex">
