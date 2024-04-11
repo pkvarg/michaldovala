@@ -13,7 +13,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="pb-[4%] pt-[9%]">
+        <div className="pb-[4%] pt-[4%]">
           <Header />
         </div>
         <div>
@@ -40,7 +40,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
         )}
       </div>
       <div className="relative">
-        <div className="absolute -top-[60px] left-[12.5%] flex lg:left-[72.5%] lg:top-[40px]">
+        <div className="absolute -top-[60px] left-[12.5%] flex lg:left-[72.5%] lg:top-[10%]">
           {slideNo > 3 && (
             <Image
               width={50}
@@ -52,7 +52,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
             />
           )}
         </div>
-        <div className="absolute -top-[60px] right-[12%] flex lg:right-[7.5%] lg:top-[40px]">
+        <div className="absolute -top-[60px] right-[12%] flex lg:right-[7.5%] lg:top-[10%]">
           {slideNo < 7 && (
             <Image
               width={50}

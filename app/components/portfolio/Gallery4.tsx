@@ -1,55 +1,73 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Image from 'next/image';
 
 interface GalleryProps {
-  slideNo: number;
-  setSlideNo: any;
+  slide: number;
+  setSlide: any;
 }
 
-const Gallery4: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
+const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
+  console.log('slide-4-', slide);
+
+  useEffect(() => {
+    if (slide > 11) {
+      setSlide(11);
+    }
+  }, [slide]);
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="pb-[4%] pt-[9%]">
+        <div className="pb-[4%] pt-[7%]">
           <Header />
         </div>
         <div>
+          {slide <= 8}
           <Image
             height={1000}
             width={1000}
             alt="michal dovala"
-            src={'/gallery4.webp'}
+            src={`/gallery${slide}.webp`}
             className="w-screen"
           />
         </div>
       </div>
 
       <div className="flex lg:hidden">
-        <Image
-          src={'/mobile_gallery2.webp'}
-          height={1000}
-          width={1000}
-          alt="michal dovala"
-        />
+        {slide >= 8 && (
+          <Image
+            src={`/mobile_gallery${slide}.webp`}
+            height={1000}
+            width={1000}
+            alt="michal dovala"
+          />
+        )}
       </div>
       <div className="relative">
-        <div className="absolute right-[7.5%] top-[40px] flex">
-          <Image
-            width={50}
-            height={50}
-            alt="arrow_left"
-            src={'/arrow_left.webp'}
-            className="cursor-pointer"
-            onClick={() => setSlideNo((prev: number) => prev - 1)}
-          />
-          <Image
-            width={50}
-            height={50}
-            alt="arrow_left"
-            src={'/arrow_right.webp'}
-            className="ml-[200px] cursor-pointer"
-          />
+        <div className="absolute -top-[60px] left-[12.5%] flex lg:left-[72.5%] lg:top-[40px]">
+          {slide > 8 && (
+            <Image
+              width={50}
+              height={50}
+              alt="arrow_left"
+              src={'/arrow_left.webp'}
+              className="w-[35px] cursor-pointer lg:w-[30px]"
+              onClick={() => setSlide((prev: number) => prev - 1)}
+            />
+          )}
+        </div>
+        <div className="absolute -top-[60px] right-[12%] flex lg:right-[7.5%] lg:top-[40px]">
+          {slide < 11 && (
+            <Image
+              width={50}
+              height={50}
+              alt="arrow_left"
+              src={'/arrow_right.webp'}
+              className="w-[35px] cursor-pointer lg:w-[30px]"
+              onClick={() => setSlide((prev: number) => prev + 1)}
+            />
+          )}
         </div>
       </div>
     </>
