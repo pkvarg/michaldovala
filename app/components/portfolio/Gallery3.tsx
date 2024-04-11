@@ -40,25 +40,29 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
         )}
       </div>
       <div className="relative">
-        <div className="absolute right-[7.5%] top-[40px] flex">
+        <div className="absolute -top-[60px] left-[12.5%] flex lg:left-[72.5%] lg:top-[40px]">
           {slideNo > 3 && (
             <Image
               width={50}
               height={50}
               alt="arrow_left"
               src={'/arrow_left.webp'}
-              className="cursor-pointer"
+              className="w-[35px] cursor-pointer lg:w-[30px]"
               onClick={() => setSlideNo((prev: number) => prev - 1)}
             />
           )}
-          <Image
-            width={50}
-            height={50}
-            alt="arrow_left"
-            src={'/arrow_right.webp'}
-            className="ml-[200px] cursor-pointer"
-            onClick={() => setSlideNo((prev: number) => prev + 1)}
-          />
+        </div>
+        <div className="absolute -top-[60px] right-[12%] flex lg:right-[7.5%] lg:top-[40px]">
+          {slideNo < 7 && (
+            <Image
+              width={50}
+              height={50}
+              alt="arrow_left"
+              src={'/arrow_right.webp'}
+              className="w-[35px] cursor-pointer lg:w-[30px]"
+              onClick={() => setSlideNo((prev: number) => prev + 1)}
+            />
+          )}
         </div>
       </div>
     </>
