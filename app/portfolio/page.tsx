@@ -77,7 +77,7 @@ const Portfolio = () => {
       <Gallery3 slideNo={slideNo} setSlideNo={setSlideNo} />
       <Gallery4 slide={slide} setSlide={setSlide} />
 
-      <div className="relative mt-[30%] hidden h-[115vh] flex-col bg-[#060085] lg:flex 2xl:mt-[15%]">
+      <div className="relative mt-[30%] hidden h-[115vh] flex-col bg-[#060085] lg:flex 2xl:mt-[20%]">
         <Header />
 
         <div className="absolute left-[15%] top-[52.5%] hidden bg-[#060085] text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
