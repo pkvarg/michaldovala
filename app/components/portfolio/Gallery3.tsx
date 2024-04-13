@@ -13,7 +13,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="mt-[11.5%] pb-[4%] 2xl:mt-[8%]">
+        <div className="mt-[11.5%] pb-[4%] 2xl:mt-[9%]">
           <Header />
         </div>
         <div>
@@ -22,7 +22,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
               height={1000}
               width={1000}
               alt="michal dovala"
-              src={`/gallery${slideNo}.webp`}
+              src={`/gallery00${slideNo}.webp`}
               className="w-screen"
             />
           )}

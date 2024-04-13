@@ -14,7 +14,7 @@ const Gallery2 = () => {
             height={1000}
             width={1000}
             alt="michal dovala"
-            src={'/gallery2.webp'}
+            src={'/gallery002.webp'}
             className="w-screen"
           />
         </div>

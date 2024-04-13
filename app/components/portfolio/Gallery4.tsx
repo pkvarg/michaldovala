@@ -19,7 +19,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="mt-[22.5%] pb-[4%] 2xl:mt-[15%]">
+        <div className="mt-[22.5%] pb-[4%] 2xl:mt-[17.5%]">
           <Header />
         </div>
         <div>
@@ -28,7 +28,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
             height={1000}
             width={1000}
             alt="michal dovala"
-            src={`/gallery${slide}.webp`}
+            src={`/gallery00${slide}.webp`}
             className="w-screen"
           />
         </div>
