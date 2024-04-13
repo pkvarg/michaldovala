@@ -17,7 +17,7 @@ const Portfolio = () => {
   }, [slideNo]);
 
   return (
-    <>
+    <div className="bg-[#060085]">
       <div className="relative hidden h-screen flex-col bg-[#060085] lg:flex">
         <Header />
         <div className="z-9999 absolute left-[15%] top-[52.5%] hidden text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
@@ -77,9 +77,10 @@ const Portfolio = () => {
       <Gallery3 slideNo={slideNo} setSlideNo={setSlideNo} />
       <Gallery4 slide={slide} setSlide={setSlide} />
 
-      <div className="relative mt-[8%] hidden h-[115vh] flex-col bg-[#060085] lg:flex">
+      <div className="relative mt-[30%] hidden h-[115vh] flex-col bg-[#060085] lg:flex 2xl:mt-[15%]">
         <Header />
-        <div className="absolute left-[15%] top-[52.5%] hidden text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
+
+        <div className="absolute left-[15%] top-[52.5%] hidden bg-[#060085] text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
           <p className="ml-[36%] flex flex-row gap-1 font-extrabold text-[#ffffff]">
             <span className="text-[#edd900]">Zlepši</span>
             <span>predaje,</span>
@@ -100,7 +101,7 @@ const Portfolio = () => {
             src="/md_no_text.webp"
           ></Image>
         </div>
-        <div className="alfa-slab hidden lg:inline">
+        <div className="alfa-slab hidden bg-[#060085] lg:inline">
           <h1 className="absolute right-[30%] top-[55%] z-10 text-center text-[185px] font-[900] uppercase text-white">
             <span className="inline-block">M</span>
             <span className="inline-block">i</span>
@@ -118,16 +119,16 @@ const Portfolio = () => {
             <span className="inline-block">a</span>
           </h2>
         </div>
-        <div className="absolute bottom-1 left-[15%] flex flex-row text-[#edd900]">
+        <div className="absolute bottom-1 left-[15%] flex flex-row bg-[#060085] text-[#edd900]">
           <a href="https://www.pictusweb.sk" target="_blank" rel="noreferrer">
             &#60;&#47;&#62; PICTUSWEB Development
           </a>
         </div>
-        <div className="absolute bottom-1 right-[15%] flex flex-row text-[#edd900]">
+        <div className="absolute bottom-1 right-[15%] flex flex-row bg-[#060085] text-[#edd900]">
           <p>&copy; {Date().substring(11, 15)} Všetky práva vyhradené</p>
         </div>
       </div>
-      <div className="relative flex lg:hidden">
+      <div className="relative flex bg-[#060085] lg:hidden">
         <a
           className="absolute right-[9%] top-6 h-[6%] w-[40%] cursor-pointer bg-transparent px-4 py-2"
           href="tel:+421 944 517 560"
@@ -147,7 +148,7 @@ const Portfolio = () => {
           &#60;&#47;&#62; PICTUSWEB Development
         </a>
       </div>
-    </>
+    </div>
   );
 };
 

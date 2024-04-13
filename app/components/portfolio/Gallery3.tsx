@@ -13,7 +13,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="pb-[4%] pt-[4%]">
+        <div className="mt-[11.5%] pb-[4%] 2xl:mt-[8%]">
           <Header />
         </div>
         <div>
