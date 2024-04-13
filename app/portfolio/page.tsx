@@ -77,7 +77,7 @@ const Portfolio = () => {
       <Gallery3 slideNo={slideNo} setSlideNo={setSlideNo} />
       <Gallery4 slide={slide} setSlide={setSlide} />
 
-      <div className="relative mt-[30%] hidden h-[115vh] flex-col bg-[#060085] lg:flex 2xl:mt-[20%]">
+      <div className="relative mt-[30%] hidden h-[115vh] flex-col overflow-hidden bg-[#060085] lg:flex 2xl:mt-[20%]">
         <Header />
 
         <div className="absolute left-[15%] top-[52.5%] hidden bg-[#060085] text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
@@ -93,7 +93,7 @@ const Portfolio = () => {
             <span>na mieru</span>
           </p>
         </div>
-        <div className=" z-1 absolute -right-[15%] top-[20%] hidden lg:inline 2xl:right-0">
+        <div className="z-1 absolute -right-[15%] top-[20%] hidden lg:inline 2xl:right-0">
           <Image
             width={1000}
             height={1000}
