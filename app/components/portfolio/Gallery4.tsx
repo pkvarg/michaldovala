@@ -34,7 +34,11 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
         </div>
       </div>
 
-      <div className="flex lg:hidden">
+      <div className="relative flex lg:hidden">
+        <a
+          className="absolute right-[9%] top-6 h-[6%] w-[40%] cursor-pointer bg-transparent px-4 py-2"
+          href="tel:+421 944 517 560"
+        ></a>
         {slide >= 8 && (
           <Image
             src={`/mobile_gallery${slide}.webp`}

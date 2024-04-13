@@ -9,9 +9,9 @@ const Header = () => {
       </div>
       <div>
         <div className="mr-4 mt-4 h-[55px] w-[96.5%] bg-[#edd900]"></div>
-        <p className="-mt-[68px] ml-2 bg-[#000000] px-4 py-2 text-[30px]">
-          +421 944 517 560
-        </p>
+        <div className="-mt-[68px] ml-2 bg-[#000000] px-4 py-2 text-[30px]">
+          <a href="tel:+421 944 517 560">+421 944 517 560</a>
+        </div>
       </div>
     </div>
   );

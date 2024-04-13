@@ -29,7 +29,11 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
         </div>
       </div>
 
-      <div className="flex lg:hidden">
+      <div className="relative flex lg:hidden">
+        <a
+          className="absolute right-[9%] top-6 h-[6%] w-[40%] cursor-pointer bg-transparent px-4 py-2"
+          href="tel:+421 944 517 560"
+        ></a>
         {slideNo <= 7 && (
           <Image
             src={`/mobile_gallery${slideNo}.webp`}

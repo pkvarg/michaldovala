@@ -20,7 +20,7 @@ const Portfolio = () => {
     <>
       <div className="relative hidden h-screen flex-col bg-[#060085] lg:flex">
         <Header />
-        <div className="absolute left-[15%] top-[52.5%] hidden text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
+        <div className="z-9999 absolute left-[15%] top-[52.5%] hidden text-[22.5px] lg:inline 2xl:left-[20%] 2xl:top-[50%]">
           <p className="ml-[36%] flex flex-row gap-1 font-extrabold text-[#ffffff]">
             <span className="text-[#edd900]">Zlepši</span>
             <span>predaje,</span>
@@ -33,7 +33,7 @@ const Portfolio = () => {
             <span>na mieru</span>
           </p>
         </div>
-        <div className=" z-1 absolute -right-[15%] top-[20%] hidden lg:inline 2xl:right-0">
+        <div className="absolute -right-[15%] top-[20%] z-0 hidden lg:inline 2xl:right-0">
           <Image
             width={1000}
             height={1000}
@@ -61,7 +61,11 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="flex lg:hidden">
+      <div className="relative flex lg:hidden">
+        <a
+          className="absolute right-[9%] top-6 h-[6%] w-[40%] cursor-pointer bg-transparent px-4 py-2"
+          href="tel:+421 944 517 560"
+        ></a>
         <Image
           src={'/mobile_hero.webp'}
           height={1000}
@@ -114,14 +118,34 @@ const Portfolio = () => {
             <span className="inline-block">a</span>
           </h2>
         </div>
+        <div className="absolute bottom-1 left-[15%] flex flex-row text-[#edd900]">
+          <a href="https://www.pictusweb.sk" target="_blank" rel="noreferrer">
+            &#60;&#47;&#62; PICTUSWEB Development
+          </a>
+        </div>
+        <div className="absolute bottom-1 right-[15%] flex flex-row text-[#edd900]">
+          <p>&copy; {Date().substring(11, 15)} Všetky práva vyhradené</p>
+        </div>
       </div>
-      <div className="flex lg:hidden">
+      <div className="relative flex lg:hidden">
+        <a
+          className="absolute right-[9%] top-6 h-[6%] w-[40%] cursor-pointer bg-transparent px-4 py-2"
+          href="tel:+421 944 517 560"
+        ></a>
         <Image
           src={'/mobile_footer.webp'}
           height={1000}
           width={1000}
           alt="michal dovala"
         />
+        <a
+          href="https://www.pictusweb.sk"
+          target="_blank"
+          rel="noreferrer"
+          className="absolute bottom-1 left-2 text-[#edd900]"
+        >
+          &#60;&#47;&#62; PICTUSWEB Development
+        </a>
       </div>
     </>
   );
