@@ -142,7 +142,7 @@ button {
   }
 }
 
-@media screen and (height: 624px) {
+@media screen and (max-height: 630px) {
   .bluemt {
     margin-top: 12.5%;
   }
