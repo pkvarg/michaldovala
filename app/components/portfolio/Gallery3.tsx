@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './Header';
 import Image from 'next/image';
 
@@ -13,7 +13,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="bluemt pb-[4%] 2xl:mt-[9%]">
+        <div className="bluemt pb-[4%] 2xl:mt-[12.5%]">
           <Header />
         </div>
         <div>
@@ -22,7 +22,6 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
               height={1000}
               width={1000}
               alt="michal dovala"
-              //src={`/gallery00${slideNo}.webp`}
               src={`/gall00${slideNo}.png`}
               className="w-screen"
             />
@@ -45,7 +44,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
         )}
       </div>
       <div className="relative">
-        <div className="absolute -top-[60px] left-[12.5%] flex lg:left-[72.5%] lg:top-24 2xl:top-40">
+        <div className="arrows absolute left-[12.5%] flex lg:left-[72.5%] lg:top-0">
           {slideNo > 3 && (
             <Image
               width={50}
@@ -57,7 +56,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
             />
           )}
         </div>
-        <div className="absolute -top-[60px] right-[12%] flex lg:right-[7.5%] lg:top-24 2xl:top-40">
+        <div className="arrows absolute right-[12%] flex lg:right-[7.5%] lg:top-0 ">
           {slideNo < 7 && (
             <Image
               width={50}

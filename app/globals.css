@@ -116,19 +116,65 @@ button {
   height: 100vh;
 }
 
+.bluemt {
+  margin-top: 5.5%;
+}
+
+.bluemt2 {
+  margin-top: 8%;
+}
+
+.arrows {
+  margin-top: -2.5%;
+}
+
+.arrows2 {
+  margin-top: -1%;
+}
+
+@media screen and (min-width: 1920px) {
+  .arrows {
+    margin-top: 12%;
+  }
+
+  .arrows2 {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (height: 624px) {
+  .bluemt {
+    margin-top: 12.5%;
+  }
+
+  .bluemt2 {
+    margin-top: 22.5%;
+  }
+
+  .bluemt3 {
+    margin-top: 30%;
+  }
+
+  .arrows {
+    margin-top: 12.5%;
+  }
+
+  .arrows2 {
+    margin-top: 21.5%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .realsluzby {
     width: 100vw;
     height: 225px;
   }
-}
 
-.bluemt {
-  margin-top: 3%;
-}
+  .arrows {
+    margin-top: -15%;
+  }
 
-@media screen and (width: 1370px) and (height: 624px) {
-  .bluemt {
-    margin-top: 11%;
+  .arrows2 {
+    margin-top: -16%;
   }
 }

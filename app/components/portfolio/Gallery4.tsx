@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Header from './Header';
 import Image from 'next/image';
 
@@ -19,7 +19,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
   return (
     <>
       <div className="hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="mt-[22.5%] pb-[4%] 2xl:mt-[17.5%]">
+        <div className="bluemt2 pb-[4%] 2xl:mt-[22.5%]">
           <Header />
         </div>
         <div>
@@ -28,7 +28,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
             height={1000}
             width={1000}
             alt="michal dovala"
-            src={`/gallery00${slide}.webp`}
+            src={`/gall00${slide}.png`}
             className="w-screen"
           />
         </div>
@@ -49,7 +49,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
         )}
       </div>
       <div className="relative">
-        <div className="absolute -top-[60px] left-[12.5%] flex lg:left-[72.5%] lg:top-60 2xl:top-72">
+        <div className="arrows2 absolute left-[12.5%] flex lg:left-[72.5%] lg:top-0">
           {slide > 8 && (
             <Image
               width={50}
@@ -61,7 +61,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
             />
           )}
         </div>
-        <div className="absolute -top-[60px] right-[12%] flex lg:right-[7.5%] lg:top-60 2xl:top-72">
+        <div className="arrows2 absolute right-[12%] flex lg:right-[7.5%] lg:top-0">
           {slide < 11 && (
             <Image
               width={50}

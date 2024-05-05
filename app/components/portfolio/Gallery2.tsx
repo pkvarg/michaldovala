@@ -7,7 +7,7 @@ const Gallery2 = () => {
   return (
     <>
       <div className="relative hidden h-screen flex-col bg-[#060085] lg:flex">
-        <div className="pb-8 lg:pt-[2%] 2xl:pt-[3%]">
+        <div className="pb-16 lg:pt-[2%] 2xl:pt-[3%]">
           <Header />
         </div>
 
