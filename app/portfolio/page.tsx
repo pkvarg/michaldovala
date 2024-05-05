@@ -33,7 +33,7 @@ const Portfolio = () => {
             <span>na mieru</span>
           </p>
         </div>
-        <div className="absolute -right-[15%] top-[20%] z-0 hidden lg:inline 2xl:right-0">
+        <div className="mdtt absolute -right-[15%] top-[20%] z-0 hidden lg:inline 2xl:right-0">
           <Image
             width={1000}
             height={1000}
@@ -51,7 +51,7 @@ const Portfolio = () => {
             <span className="inline-block">a</span>
             <span className="inline-block">l</span>
           </h1>
-          <h2 className="absolute right-[20%] top-[67.5%] z-0 text-center text-[185px] font-[900] uppercase text-black">
+          <h2 className="mdt absolute right-[20%] top-[67.5%] z-0 text-center text-[185px] font-[900] uppercase text-black">
             <span className="inline-block">D</span>
             <span className="inline-block">o</span>
             <span className="inline-block">v</span>

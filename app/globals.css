@@ -162,6 +162,13 @@ button {
   .arrows2 {
     margin-top: 21.5%;
   }
+  .mdtt {
+    margin-top: -41px;
+  }
+
+  .mdt {
+    margin-top: -6px;
+  }
 }
 
 @media screen and (max-width: 768px) {
