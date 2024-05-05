@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Image from 'next/image';
 
@@ -10,8 +11,8 @@ const Gallery2 = () => {
           <Header />
         </div>
 
-        <div>
-          <div className="absolute right-[10%] top-[31%] hidden lg:flex 2xl:right-[5%] 2xl:top-[30%]">
+        <div className="">
+          {/* <div className="absolute right-[10%] top-[31%] hidden lg:flex 2xl:right-[5%] 2xl:top-[30%]">
             <div>
               <div className="ml-[10px] h-[85px] w-[290px] bg-[#edd900]"></div>
               <div className=" -mt-[93px] mr-4 bg-[#ffffff] px-4 py-2 text-[30px]">
@@ -20,12 +21,12 @@ const Gallery2 = () => {
                 </h1>
               </div>
             </div>
-          </div>
+          </div> */}
           <Image
             height={1000}
             width={1000}
             alt="michal dovala"
-            src={'/gallery002.png'}
+            src={'/gall002.png'}
             className="w-screen"
           />
         </div>

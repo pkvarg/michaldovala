@@ -39,6 +39,7 @@ const Portfolio = () => {
             height={1000}
             alt="michal dovala"
             src="/md_no_text.webp"
+            priority
           ></Image>
         </div>
         <div className="alfa-slab hidden lg:inline">
@@ -99,6 +100,7 @@ const Portfolio = () => {
             height={1000}
             alt="michal dovala"
             src="/md_no_text.webp"
+            priority
           ></Image>
         </div>
         <div className="alfa-slab hidden bg-[#060085] lg:inline">

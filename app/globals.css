@@ -122,3 +122,13 @@ button {
     height: 225px;
   }
 }
+
+.bluemt {
+  margin-top: 3%;
+}
+
+@media screen and (width: 1370px) and (height: 624px) {
+  .bluemt {
+    margin-top: 11%;
+  }
+}
