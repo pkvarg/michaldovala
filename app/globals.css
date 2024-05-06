@@ -132,16 +132,6 @@ button {
   margin-top: -1%;
 }
 
-@media screen and (min-width: 1920px) {
-  .arrows {
-    margin-top: 12%;
-  }
-
-  .arrows2 {
-    margin-top: 20%;
-  }
-}
-
 @media screen and (max-height: 630px) {
   .bluemt {
     margin-top: 12.5%;
@@ -168,6 +158,16 @@ button {
 
   .mdt {
     margin-top: -6px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .arrows {
+    margin-top: 0% !important;
+  }
+
+  .arrows2 {
+    margin-top: 20%;
   }
 }
 

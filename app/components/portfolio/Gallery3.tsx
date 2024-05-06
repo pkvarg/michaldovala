@@ -44,7 +44,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
         )}
       </div>
       <div className="relative">
-        <div className="arrows absolute left-[12.5%] flex lg:left-[72.5%] lg:top-0">
+        <div className="arrows absolute left-[12.5%] flex lg:left-[72.5%] lg:top-0 2xl:top-[350px]">
           {slideNo > 3 && (
             <Image
               width={50}
@@ -56,7 +56,7 @@ const Gallery3: React.FC<GalleryProps> = ({ slideNo, setSlideNo }) => {
             />
           )}
         </div>
-        <div className="arrows absolute right-[12%] flex lg:right-[7.5%] lg:top-0 ">
+        <div className="arrows absolute right-[12%] flex lg:right-[7.5%] lg:top-0 2xl:top-[350px]">
           {slideNo < 7 && (
             <Image
               width={50}

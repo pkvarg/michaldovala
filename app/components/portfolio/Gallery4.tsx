@@ -49,7 +49,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
         )}
       </div>
       <div className="relative">
-        <div className="arrows2 absolute left-[12.5%] flex lg:left-[72.5%] lg:top-0">
+        <div className="arrows2 absolute left-[12.5%] flex lg:left-[72.5%] lg:top-0 2xl:top-[400px]">
           {slide > 8 && (
             <Image
               width={50}
@@ -61,7 +61,7 @@ const Gallery4: React.FC<GalleryProps> = ({ slide, setSlide }) => {
             />
           )}
         </div>
-        <div className="arrows2 absolute right-[12%] flex lg:right-[7.5%] lg:top-0">
+        <div className="arrows2 absolute right-[12%] flex lg:right-[7.5%] lg:top-0 2xl:top-[400px]">
           {slide < 11 && (
             <Image
               width={50}
