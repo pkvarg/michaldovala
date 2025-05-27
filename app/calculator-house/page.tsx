@@ -641,15 +641,21 @@ const CalculatorHouse = () => {
       price: resprice,
     };
     console.log('..sendingHouseEmail..', calcValues);
+
+  const apiUrl = 'http://localhost:3013/api/house/michaldovala'
+     // const apiUrl = 'https://hono-api.pictusweb.com/api/house/michaldovala'
+
+
     const { data } = await axios.put(
-      `https://api.pictusweb.com/api/md/email-house`,
-      //`http://localhost:2000/api/md/email-house`,
+     apiUrl,
       {
         calcValues,
       },
     );
 
+
     console.log('ctc:', data);
+    
   };
 
   const handleSubmitForm = async (e: any) => {
@@ -663,7 +669,7 @@ const CalculatorHouse = () => {
       const res = await startCalculation();
       if (res) {
         console.log('resawait house', res);
-        sendEmail((res as { price: number }).price);
+        sendEmail((res as { price: number }).price);        
       }
 
       setTimeout(handleNext, 4000);

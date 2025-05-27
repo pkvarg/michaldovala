@@ -18,31 +18,80 @@ const Contact = () => {
   const [passwordGroupOne, setPasswordGroupOne] = useState(x);
   const [passwordGroupTwo, setPasswordGroupTwo] = useState(y);
 
+
+ const increaseBots = async () => {
+    //const apiUrl = 'https://hono-api.pictusweb.com/api/bots/michaldovala/increase'
+    const apiUrl = 'http://localhost:3013/api/bots/michaldovala/increase'
+    try {
+      await fetch(apiUrl, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+
+      //console.log('data bots', data)
+    } catch (error) {
+      console.error('Error increasing bots:', error)
+    }
+  }
+
+  const increaseEmails = async () => {
+    //const apiUrl = 'https://hono-api.pictusweb.com/api/emails/michaldovala/increase'
+    const apiUrl = 'http://localhost:3013/api/emails/michaldovala/increase'
+    try {
+      await fetch(apiUrl, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      //console.log('data email', data)
+    } catch (error) {
+      console.error('Error increasing emails:', error)
+    }
+  }
+
+
+  const origin = 'MICHALDOVALA'
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     console.log('subbbbb');
     if (passwordGroupOne !== x || passwordGroupTwo !== y) {
+      increaseBots()
       toast.error('Nastala chyba.');
     } else {
       try {
         console.log('..email is sending..');
-        const { data } = await axios.put(
-          `https://api.pictusweb.com/api/md/contact`,
-          // `http://localhost:2000/api/md/contact`,
+
+  const apiUrl = 'http://localhost:3013/api/michaldovala/contact'
+     // const apiUrl = 'https://hono-api.pictusweb.com/api/michaldovala/contact'
+
+
+        const { data } = await axios.post(
+          apiUrl,
           {
             name,
             email,
             phone,
-            message,
+            mailMessage: message,
+            locale: 'sk',
+            origin,
+            subject: 'Moderný maklér'
           },
-        );
+        );        
+        
 
-        if (data.status === 'Success') toast.success('Správa úspešne odoslaná');
+        if (data.success) {
+        toast.success('Správa úspešne odoslaná');
         setName('');
         setEmail('');
         setPhone('');
         setMessage('');
+        increaseEmails()
+        }
       } catch (error: any) {
         console.log(error);
         toast.error(error.message);

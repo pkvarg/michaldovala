@@ -503,6 +503,9 @@ const Calculator = () => {
     }
   };
 
+  const apiUrl = 'http://localhost:3013/api/flat/michaldovala'
+     // const apiUrl = 'https://hono-api.pictusweb.com/api/flat/michaldovala'
+
   const sendEmail = async (resprice: number) => {
     const calcValues = {
       flatOrHouse,
@@ -537,8 +540,7 @@ const Calculator = () => {
     };
     console.log('..sending..', calcValues);
     const { data } = await axios.put(
-      `https://api.pictusweb.com/api/md/email`,
-      //`http://localhost:2000/api/md/email`,
+     apiUrl,
       {
         calcValues,
       },
@@ -558,8 +560,8 @@ const Calculator = () => {
       console.log('resawait flat', res);
       if (res) {
         sendEmail((res as { price: number }).price);
+        
       }
-
       setTimeout(handleNext, 4000);
     }
   };
