@@ -6,8 +6,8 @@ import CookieConsent from 'react-cookie-consent'
 const Footer = () => {
   const path = usePathname();
 
-    //const apiUrl = 'https://hono-api.pictusweb.com/api/visitors/michaldovala/increase'
-  const apiUrl = 'http://localhost:3013/api/visitors/michaldovala/increase'
+    const apiUrl = 'https://hono-api.pictusweb.com/api/visitors/michaldovala/increase'
+  //const apiUrl = 'http://localhost:3013/api/visitors/michaldovala/increase'
 
   const incrementCount = async () => {
     try {

@@ -20,8 +20,8 @@ const Contact = () => {
 
 
  const increaseBots = async () => {
-    //const apiUrl = 'https://hono-api.pictusweb.com/api/bots/michaldovala/increase'
-    const apiUrl = 'http://localhost:3013/api/bots/michaldovala/increase'
+    const apiUrl = 'https://hono-api.pictusweb.com/api/bots/michaldovala/increase'
+    //const apiUrl = 'http://localhost:3013/api/bots/michaldovala/increase'
     try {
       await fetch(apiUrl, {
         method: 'PUT',
@@ -37,8 +37,8 @@ const Contact = () => {
   }
 
   const increaseEmails = async () => {
-    //const apiUrl = 'https://hono-api.pictusweb.com/api/emails/michaldovala/increase'
-    const apiUrl = 'http://localhost:3013/api/emails/michaldovala/increase'
+    const apiUrl = 'https://hono-api.pictusweb.com/api/emails/michaldovala/increase'
+    //const apiUrl = 'http://localhost:3013/api/emails/michaldovala/increase'
     try {
       await fetch(apiUrl, {
         method: 'PUT',
@@ -66,8 +66,8 @@ const Contact = () => {
       try {
         console.log('..email is sending..');
 
-  const apiUrl = 'http://localhost:3013/api/michaldovala/contact'
-     // const apiUrl = 'https://hono-api.pictusweb.com/api/michaldovala/contact'
+ // const apiUrl = 'http://localhost:3013/api/michaldovala/contact'
+    const apiUrl = 'https://hono-api.pictusweb.com/api/michaldovala/contact'
 
 
         const { data } = await axios.post(

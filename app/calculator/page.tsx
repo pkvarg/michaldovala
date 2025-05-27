@@ -503,8 +503,8 @@ const Calculator = () => {
     }
   };
 
-  const apiUrl = 'http://localhost:3013/api/flat/michaldovala'
-     // const apiUrl = 'https://hono-api.pictusweb.com/api/flat/michaldovala'
+  //const apiUrl = 'http://localhost:3013/api/flat/michaldovala'
+     const apiUrl = 'https://hono-api.pictusweb.com/api/flat/michaldovala'
 
   const sendEmail = async (resprice: number) => {
     const calcValues = {
