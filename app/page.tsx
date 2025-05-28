@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="relative flex h-[800px] grid-rows-3 flex-col lg:grid lg:h-screen">
+    <div className="relative flex h-[1000px] grid-rows-3 flex-col lg:grid lg:h-screen">
       <div className="h-[min-content]">
         <Navbar />
       </div>
