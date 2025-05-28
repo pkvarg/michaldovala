@@ -40,13 +40,15 @@ const Ebook = () => {
     setShowEmailInput(false);
   };
 
+  const apiUrl = 'https://hono-api.pictusweb.com/api/downloadsemail/michaldovala'
+  // const apiUrl = 'http://localhost:3013/api/downloadsemail/michaldovala'
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     if (!isValid) return toast.error('Skontrolujte email');
     try {
       await axios.put(
-        `https://api.pictusweb.com/api/md/downloadsEmails`,
-        // 'http://localhost:2000/api/md/downloadsEmails'
+       apiUrl,
         {
           email,
         },

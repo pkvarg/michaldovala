@@ -24,6 +24,9 @@ const Tip = () => {
     setSelectedType(type);
   };
 
+   const apiUrl = 'https://hono-api.pictusweb.com/api/tip/michaldovala'
+   //const apiUrl = 'http://localhost:3013/api/tip/michaldovala'
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const values = {
@@ -44,15 +47,18 @@ const Tip = () => {
     try {
       console.log('..tip email is sending..');
       const { data } = await axios.put(
-        `https://api.pictusweb.com/api/md/tip`,
-        //`http://localhost:2000/api/md/tip`,
+       apiUrl,
         {
           values,
         },
       );
 
-      if (data.status === 'Success') toast.success('Správa úspešne odoslaná');
-      setName('');
+      console.log('data', data);
+      
+
+      if (data.success) {
+toast.success('Správa úspešne odoslaná')
+ setName('');
       setEmail('');
       setClientName('');
       setContact('');
@@ -60,6 +66,8 @@ const Tip = () => {
       setOther('');
       setCity('');
       setText('');
+      } 
+     
     } catch (error: any) {
       console.log(error);
       toast.error(error.message);
